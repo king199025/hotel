@@ -7,12 +7,12 @@ AddDefaultCharset UTF-8
 
 # Mod_Rewrite
 <IfModule mod_rewrite.c>
-  Options +SymLinksIfOwnerMatch
+    Options +SymLinksIfOwnerMatch 
   # Включаем mod_rewrite
   RewriteEngine On
   IndexIgnore */*
   # Перенаправляем administrator на входной скрипт админки
   RewriteRule ^secure(.*)?$ /backend/web/$1 [L,PT]
   # Перенаправляем все запросы на входной скрипт
-  RewriteRule ^([^/].*)?$ /frontend/web/$1
+  RewriteRule ^([^/].*)?$ /frontend/web/$1 [NC,L,QSA]
 </IfModule>
