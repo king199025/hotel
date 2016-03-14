@@ -9,13 +9,31 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
-    'language' => 'ru-RU',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        /*'request' => [
+            'baseUrl' => '',
+        ],*/
         'request' => [
+            'class' => 'frontend\components\LangRequest',
             'baseUrl' => '',
         ],
+
+        'language'=>'ru-RU',
+        /*'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@frontend/messages',
+                    'sourceLanguage' => 'en',
+                    'fileMap' => [
+                        //'main' => 'main.php',
+                    ],
+                ],
+            ],
+        ],*/
+
         /*'user' => [
             'identityClass' => 'dektrium\user\Module',
             'enableAutoLogin' => true,
@@ -33,15 +51,31 @@ return [
             'errorAction' => 'site/error',
         ],
 
-        'urlManager' => [
+        /*'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '' => 'mainpage/default',
             ],
+        ],*/
+
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'class'=>'frontend\components\LangUrlManager',
+            'rules'=>[
+                '' => 'mainpage/default',
+                '//*'=>'/',
+            ]
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             'useFileTransport' => false,
+        ],
+    ],
+    'modules' => [
+        'mainpage' => [
+            'class' => 'frontend\modules\mainpage\Mainpage',
         ],
     ],
     'params' => $params,
