@@ -7,7 +7,7 @@ AddDefaultCharset UTF-8
 
 # Mod_Rewrite
 <IfModule mod_rewrite.c>
-    Options +SymLinksIfOwnerMatch 
+    Options +SymLinksIfOwnerMatch
   # Включаем mod_rewrite
   RewriteEngine On
   IndexIgnore */*

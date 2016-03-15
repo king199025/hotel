@@ -20,11 +20,11 @@ return [
             'cost' => 12,
             'admins' => ['admin'],
             'mailer' => [
-                'sender'                => 'admin@carbax.ru', // or ['no-reply@myhost.com' => 'Sender name']
-                'welcomeSubject'        => 'Добро пожаловать',
-                'confirmationSubject'   => 'Confirmation subject',
+                'sender' => 'admin@carbax.ru', // or ['no-reply@myhost.com' => 'Sender name']
+                'welcomeSubject' => ' ',
+                'confirmationSubject' => 'Confirmation subject',
                 'reconfirmationSubject' => 'Email change subject',
-                'recoverySubject'       => 'Recovery subject',
+                'recoverySubject' => 'Recovery subject',
             ],
         ],
     ],
