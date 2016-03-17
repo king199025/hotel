@@ -14,5 +14,5 @@ AddDefaultCharset UTF-8
   # Перенаправляем administrator на входной скрипт админки
   RewriteRule ^secure(.*)?$ /backend/web/$1 [L,PT]
   # Перенаправляем все запросы на входной скрипт
-  RewriteRule ^([^/].*)?$ /frontend/web/$1 [NC,L,QSA]
+  RewriteRule ^([^/].*)?$ /frontend/web/$1
 </IfModule>

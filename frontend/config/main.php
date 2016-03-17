@@ -12,14 +12,10 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        /*'request' => [
-            'baseUrl' => '',
-        ],*/
         'request' => [
             'class' => 'frontend\components\LangRequest',
             'baseUrl' => '',
         ],
-
         'language'=>'ru-RU',
         /*'i18n' => [
             'translations' => [

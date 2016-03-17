@@ -42,9 +42,16 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'lang' => 'lang/lang'
             ],
         ],
 
     ],
+    'on beforeRequest' => function () {
+        $pathInfo = Yii::$app->request->pathInfo;
+        if (!empty($pathInfo) && substr($pathInfo, -1) === '/') {
+            Yii::$app->response->redirect('/secure/' . substr(rtrim($pathInfo), 0, -1), 301)->send();
+        }
+    },
     'params' => $params,
 ];
