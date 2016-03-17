@@ -125,8 +125,9 @@ AppAsset::register($this);
                         <i class="fa fa-dashboard"></i> <span>Новости</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i>Добавить новость</a></li>
-                        <li><a href="index2.html"><i class="fa fa-circle-o"></i>Все новости</a></li>
+                        <li class="active"><a href="<?= Url::to(['/news/create']);?>"><i class="fa fa-circle-o"></i>Добавить новость</a></li>
+                        <li><a href="<?= Url::to(['/news']);?>"><i class="fa fa-circle-o"></i>Все новости</a></li>
+                        <li><a href="<?= Url::to(['/category_news']);?>"><i class="fa fa-circle-o"></i>Категории</a></li>
                     </ul>
                 </li>
                 <li class="treeview">

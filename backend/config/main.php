@@ -19,6 +19,9 @@ return [
         'news' => [
             'class' => 'backend\modules\news\News',
         ],
+        'category_news' => [
+            'class' => 'backend\modules\category_news\Category_news',
+        ],
     ],
     'components' => [
         'request' => [
@@ -47,6 +50,8 @@ return [
             'rules' => [
                 'lang' => 'lang/lang',
                 'news' => 'news/news',
+                'news/create' => 'news/news/create',
+                'category_news' => 'category_news/category_news',
             ],
         ],
 

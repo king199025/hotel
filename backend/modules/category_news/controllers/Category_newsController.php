@@ -1,19 +1,20 @@
 <?php
 
-namespace backend\modules\lang\controllers;
+namespace backend\modules\category_news\controllers;
 
+use common\models\Lang;
 use Yii;
-use backend\modules\lang\models\Lang;
-use backend\modules\lang\models\LangSearch;
+use backend\modules\category_news\models\CategoryNews;
+use backend\modules\category_news\models\CategoryNewsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
 /**
- * LangController implements the CRUD actions for Lang model.
+ * Category_newsController implements the CRUD actions for CategoryNews model.
  */
-class LangController extends Controller
+class Category_newsController extends Controller
 {
     public function behaviors()
     {
@@ -37,12 +38,12 @@ class LangController extends Controller
     }
 
     /**
-     * Lists all Lang models.
+     * Lists all CategoryNews models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new LangSearch();
+        $searchModel = new CategoryNewsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -52,7 +53,7 @@ class LangController extends Controller
     }
 
     /**
-     * Displays a single Lang model.
+     * Displays a single CategoryNews model.
      * @param integer $id
      * @return mixed
      */
@@ -64,25 +65,28 @@ class LangController extends Controller
     }
 
     /**
-     * Creates a new Lang model.
+     * Creates a new CategoryNews model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Lang();
+        $model = new CategoryNews();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
+            $lang = Lang::find()->all();
+
             return $this->render('create', [
                 'model' => $model,
+                'lang' => $lang,
             ]);
         }
     }
 
     /**
-     * Updates an existing Lang model.
+     * Updates an existing CategoryNews model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -92,16 +96,18 @@ class LangController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
+            $lang = Lang::find()->all();
             return $this->render('update', [
                 'model' => $model,
+                'lang' => $lang,
             ]);
         }
     }
 
     /**
-     * Deletes an existing Lang model.
+     * Deletes an existing CategoryNews model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -114,15 +120,15 @@ class LangController extends Controller
     }
 
     /**
-     * Finds the Lang model based on its primary key value.
+     * Finds the CategoryNews model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Lang the loaded model
+     * @return CategoryNews the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Lang::findOne($id)) !== null) {
+        if (($model = CategoryNews::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
