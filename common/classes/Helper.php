@@ -16,7 +16,12 @@ class Helper
 
     public static function getUserName($id){
         $user = User::find()->where(['id'=>$id])->one();
-        return $user->username;
+        if(isset($user->username)){
+            return $user->username;
+        }
+        else {
+            return false;
+        }
     }
 
 }
