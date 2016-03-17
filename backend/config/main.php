@@ -16,6 +16,9 @@ return [
         'lang' => [
             'class' => 'backend\modules\lang\Lang',
         ],
+        'news' => [
+            'class' => 'backend\modules\news\News',
+        ],
     ],
     'components' => [
         'request' => [
@@ -42,7 +45,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'lang' => 'lang/lang'
+                'lang' => 'lang/lang',
+                'news' => 'news/news',
             ],
         ],
 
