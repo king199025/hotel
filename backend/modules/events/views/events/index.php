@@ -28,8 +28,15 @@ $this->params['breadcrumbs'][] = $this->title;
             /*'id',*/
             'title',
             /*'dt_add',*/
-            'dt_event',
-            'descr:ntext',
+            /*'dt_event',*/
+            [
+                'attribute' => 'dt_event',
+                'format' => 'text',
+                'value' => function($model){
+                    return date('Y-m-d H:i', $model->dt_event);
+                }
+            ],
+            /*'descr:ntext',*/
             // 'user_id',
             // 'photo',
 

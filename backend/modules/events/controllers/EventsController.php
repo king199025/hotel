@@ -2,6 +2,8 @@
 
 namespace backend\modules\events\controllers;
 
+use common\classes\Debug;
+use common\models\Lang;
 use Yii;
 use backend\modules\events\models\Events;
 use backend\modules\events\models\EventsSearch;
@@ -61,12 +63,20 @@ class EventsController extends Controller
     public function actionCreate()
     {
         $model = new Events();
+        $lang = Lang::find()->all();
+        //Debug::prn($lang);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $model->dt_add = time();
+            $model->user_id = Yii::$app->user->id;
+            $model->dt_event = strtotime($model->dt_event . " " . $_POST['time']);
+            $model->save();
+            Yii::$app->session->setFlash('success', 'Мероприятие добавлено');
+            return $this->redirect(['index']);
         } else {
             return $this->render('create', [
                 'model' => $model,
+                'lang' => $lang
             ]);
         }
     }

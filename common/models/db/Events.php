@@ -13,6 +13,7 @@ use Yii;
  * @property integer $dt_event
  * @property string $descr
  * @property integer $user_id
+ * @property integer $lang_id
  * @property string $photo
  */
 class Events extends \yii\db\ActiveRecord
@@ -31,8 +32,8 @@ class Events extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'dt_add', 'dt_event', 'user_id'], 'required'],
-            [['dt_add', 'dt_event', 'user_id'], 'integer'],
+            [['title', 'dt_event', 'lang_id'], 'required'],
+            [['dt_add', 'dt_event', 'user_id', 'lang_id'], 'integer'],
             [['descr'], 'string'],
             [['title', 'photo'], 'string', 'max' => 255]
         ];
@@ -50,7 +51,8 @@ class Events extends \yii\db\ActiveRecord
             'dt_event' => 'Дата',
             'descr' => 'Описание',
             'user_id' => 'User ID',
-            'photo' => 'Photo',
+            'photo' => 'Фото',
+            'lang_id' => 'Язык',
         ];
     }
 }

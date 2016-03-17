@@ -29,6 +29,7 @@ class AppAsset extends AssetBundle
         'css/plugins/datepicker/datepicker3.css',
         'css/plugins/daterangepicker/daterangepicker-bs3.css',
         'css/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css',
+        'css/plugins/timepicker/bootstrap-timepicker.min.css',
     ];
     public $js = [
         'js/plugins/jQuery/jQuery-2.1.4.min.js',
@@ -43,12 +44,15 @@ class AppAsset extends AssetBundle
         'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js',
         'js/plugins/daterangepicker/daterangepicker.js',
         'js/plugins/datepicker/bootstrap-datepicker.js',
+        'js/plugins/datepicker/locales/bootstrap-datepicker.ru.js',
+        'js/plugins/timepicker/bootstrap-timepicker.min.js',
         'js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js',
         'js/plugins/slimScroll/jquery.slimscroll.min.js',
         'js/plugins/fastclick/fastclick.min.js',
         'js/dist/js/app.min.js',
         /*'js/dist/js/pages/dashboard.js',*/
         'js/dist/js/demo.js',
+        'js/script.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

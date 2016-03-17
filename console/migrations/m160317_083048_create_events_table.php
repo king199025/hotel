@@ -20,6 +20,7 @@ class m160317_083048_create_events_table extends Migration
             'descr' => Schema::TYPE_TEXT ,
             'user_id' => Schema::TYPE_INTEGER . '(11) NOT NULL',
             'photo' => Schema::TYPE_STRING . '(255) ',
+            'lang_id' => Schema::TYPE_INTEGER . '(2) ',
         ], $tableOptions);
 
     }
