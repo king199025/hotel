@@ -8,6 +8,8 @@ use yii\web\Controller;
 
 class DefaultController extends Controller
 {
+    public $layout = 'main_page';
+
     public function actionIndex()
     {
         //$lang = Yii::$app->params->l;

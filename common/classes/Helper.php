@@ -9,19 +9,25 @@
 namespace common\classes;
 
 
+use common\models\db\Seo;
 use common\models\User;
 
 class Helper
 {
 
-    public static function getUserName($id){
-        $user = User::find()->where(['id'=>$id])->one();
-        if(isset($user->username)){
+    public static function getUserName($id)
+    {
+        $user = User::find()->where(['id' => $id])->one();
+        if (isset($user->username)) {
             return $user->username;
-        }
-        else {
+        } else {
             return false;
         }
+    }
+
+    public static function getMainSeo()
+    {
+        return Seo::find()->where(['seo_key'=>'main_page'])->one();
     }
 
 }

@@ -119,6 +119,16 @@ AppAsset::register($this);
                     </ul>
                 </li>
                 <li><a href="<?= Url::to(['/lang']) ?>"><i class="fa fa-book"></i> <span>Языки</span></a></li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-dashboard"></i> <span>SEO</span> <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active">
+                            <a href="<?= Url::to(['/seo/default/main_page']);?>"><i class="fa fa-circle-o"></i>Главная</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <!-- /.sidebar -->

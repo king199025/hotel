@@ -24,6 +24,9 @@ return [
         'category_news' => [
             'class' => 'backend\modules\category_news\Category_news',
         ],
+        'seo' => [
+            'class' => 'backend\modules\seo\Seo',
+        ],
     ],
     'components' => [
         'request' => [
