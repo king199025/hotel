@@ -16,6 +16,9 @@ return [
         'lang' => [
             'class' => 'backend\modules\lang\Lang',
         ],
+        'events' => [
+            'class' => 'backend\modules\events\Events',
+        ],
     ],
     'components' => [
         'request' => [
@@ -42,7 +45,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'lang' => 'lang/lang'
+                'lang' => 'lang/lang',
+                'events' => 'events/events'
             ],
         ],
 
