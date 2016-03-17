@@ -30,9 +30,10 @@ class AppAsset extends AssetBundle
         'css/plugins/daterangepicker/daterangepicker-bs3.css',
         'css/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css',
         'css/plugins/timepicker/bootstrap-timepicker.min.css',
+        'css/style.css',
     ];
     public $js = [
-        'js/plugins/jQuery/jQuery-2.1.4.min.js',
+        /*'js/plugins/jQuery/jQuery-2.1.4.min.js',*/
         'https://code.jquery.com/ui/1.11.4/jquery-ui.min.js',
         'js/bootstrap/js/bootstrap.min.js',
         'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js',

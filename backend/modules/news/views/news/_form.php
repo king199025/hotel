@@ -9,6 +9,8 @@ use mihaildev\elfinder\InputFile;
 /* @var $this yii\web\View */
 /* @var $model backend\modules\news\models\News */
 /* @var $form yii\widgets\ActiveForm */
+/* @var $lang */
+/* @var $cat */
 ?>
 
 <div class="news-form">
@@ -30,7 +32,7 @@ use mihaildev\elfinder\InputFile;
             'id' => 'news-images',
 
             'template'      => '<div class="input-group">{input}<span class="span-btn">{button}</span></div>',
-            'options'       => ['class' => 'form-control'],
+            'options'       => ['class' => 'form-control itemImg'],
             'buttonOptions' => ['class' => 'btn btn-primary'],
             'value' => $model->images,
             'buttonName' => 'Выбрать изображение'
@@ -51,12 +53,18 @@ use mihaildev\elfinder\InputFile;
     ]);?>
 
     <?/*= $form->field($model, 'lang_id')->textInput() */?>
-    <?= $form->field($model, 'lang_id')->dropDownList(ArrayHelper::map($lang,'id','name'),['prompt' => 'Выберите язык']); ?>
+    <?= $form->field($model, 'lang_id')->dropDownList(ArrayHelper::map($lang,'id','name'),['prompt' => 'Выберите язык','class'=>'form-control selectLang' ]); ?>
 
-    <?= $form->field($model, 'cat_id')->textInput() ?>
+    <span class="selectCat">
+        <?php if($cat): ?>
+            <?= $form->field($model,'cat_id')->dropDownList(ArrayHelper::map($cat,'id','title'),['prompt' => 'Выберите категорию']); ?>
+        <?php endif; ?>
+    </span>
+
+    <?/*= $form->field($model, 'cat_id')->textInput() */?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Сохранить' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
