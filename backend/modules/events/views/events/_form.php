@@ -3,6 +3,7 @@
 use backend\widgets\TimePicer;
 use mihaildev\ckeditor\CKEditor;
 use mihaildev\elfinder\ElFinder;
+use mihaildev\elfinder\InputFile;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -40,8 +41,27 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'lang_id')->dropDownList(ArrayHelper::map($lang, 'id', 'name'), ['prompt'=>'Выберите язык']) ?>
 
-    <?= $form->field($model, 'photo')->textInput(['maxlength' => true]) ?>
+    <?/*= $form->field($model, 'photo')->textInput(['maxlength' => true]) */?>
+    <div class="imgUpload">
+        <div class="media__upload_img"><img src="<?=$model->photo;?>" width="100px"/></div>
 
+        <?php
+        echo InputFile::widget([
+            'language'   => 'ru',
+            'controller' => 'elfinder', // вставляем название контроллера, по умолчанию равен elfinder
+            'filter'     => 'image',    // фильтр файлов, можно задать массив фильтров https://github.com/Studio-42/elFinder/wiki/Client-configuration-options#wiki-onlyMimes
+            'name'       => 'Events[photo]',
+            'id' => 'events-photo',
+
+            'template'      => '<div class="input-group">{input}<span class="span-btn">{button}</span></div>',
+            'options'       => ['class' => 'form-control'],
+            'buttonOptions' => ['class' => 'btn btn-primary'],
+            'value' => $model->photo,
+            'buttonName' => 'Выбрать изображение'
+        ]);
+        ?>
+    </div>
+    <br><br>
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Добавить' : 'Редактировать', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
