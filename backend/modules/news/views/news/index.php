@@ -1,5 +1,7 @@
 <?php
 
+use common\models\db\CategoryNews;
+use common\models\Lang;
 use yii\helpers\Html;
 use yii\grid\GridView;
 
@@ -26,10 +28,22 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'title',
-            'images',
-            'dt_add',
-            'lang_id',
-            'cat_id',
+            [
+                'attribute' => 'lang_id',
+                'format' => 'text',
+                'value' => function($model){
+
+                    return Lang::findOne(['id'=>$model->lang_id])->name;
+                }
+            ],
+            [
+                'attribute' => 'cat_id',
+                'format' => 'text',
+                'value' => function($model){
+
+                    return CategoryNews::findOne(['id'=>$model->cat_id])->title;
+                }
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

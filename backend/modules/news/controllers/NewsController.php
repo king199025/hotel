@@ -2,10 +2,13 @@
 
 namespace backend\modules\news\controllers;
 
+use common\models\db\CategoryNews;
 use common\models\Lang;
 use Yii;
 use backend\modules\news\models\News;
 use backend\modules\news\models\NewsSearch;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -23,6 +26,7 @@ class NewsController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
+                    'get_categ' => ['post'],
                 ],
             ],
             'access' => [
@@ -76,7 +80,7 @@ class NewsController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             $model->dt_add = time();
             $model->save();
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
             $lang = Lang::find()->all();
             return $this->render('create', [
@@ -97,10 +101,14 @@ class NewsController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
+            $lang = Lang::find()->all();
+            $cat = CategoryNews::find()->where(['lang_id' => $model->lang_id])->all();
             return $this->render('update', [
                 'model' => $model,
+                'lang' => $lang,
+                'cat' => $cat,
             ]);
         }
     }
@@ -133,4 +141,15 @@ class NewsController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+
+    public function actionGet_categ(){
+        $categ = CategoryNews::find()->where(['lang_id'=>$_POST['langId']])->all();
+        echo Html::label('Категория', 'news-cat_id', ['class' => 'control-label']);
+        echo Html::dropDownList('News[cat_id]',null, ArrayHelper::map($categ,'id','title'),['prompt'=>'Выберите категорию','class' => 'form-control']);
+
+    }
 }
+
+
+
