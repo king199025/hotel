@@ -1,5 +1,7 @@
 <?php
 
+use mihaildev\ckeditor\CKEditor;
+use mihaildev\elfinder\ElFinder;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -18,7 +20,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'dt_event')->textInput() ?>
 
-    <?= $form->field($model, 'descr')->textarea(['rows' => 6]) ?>
+    <?/*= $form->field($model, 'descr')->textarea(['rows' => 6]) */?>
+    <?php echo $form->field($model, 'descr')->widget(CKEditor::className(),[
+        'editorOptions' => ElFinder::ckeditorOptions('elfinder', [
+            'preset' => 'full',
+            'inline' => false,
+            'path' => 'frontend/web/media/upload',
+        ]),
+    ]);?>
 
     <?/*= $form->field($model, 'user_id')->textInput() */?>
 

@@ -9,7 +9,7 @@ $params = array_merge(
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
-    'language'=>'ru-RU',
+    'language' => 'ru-RU',
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
@@ -17,7 +17,9 @@ return [
             'class' => 'backend\modules\lang\Lang',
         ],
         'events' => [
-            'class' => 'backend\modules\events\Events',
+            'class' => 'backend\modules\events\Events'],
+        'news' => [
+            'class' => 'backend\modules\news\News',
         ],
     ],
     'components' => [
@@ -46,7 +48,8 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'lang' => 'lang/lang',
-                'events' => 'events/events'
+                'events' => 'events/events',
+                'news' => 'news/news',
             ],
         ],
 
