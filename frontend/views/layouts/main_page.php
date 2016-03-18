@@ -291,7 +291,7 @@ AppAsset::register($this);
 
 <?= FooterMain::widget(); ?>
 
-<a href="#" id='Go_Top'><img alt="up" src="img/up.png"></a>
+<a href="#" id='Go_Top'><img alt="up" src="/img/up.png"></a>
 <!--Новая верстка конец-->
 
 
