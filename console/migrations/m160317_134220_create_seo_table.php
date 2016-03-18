@@ -20,6 +20,10 @@ class m160317_134220_create_seo_table extends Migration
             'keywords' => Schema::TYPE_STRING . '(155) NOT NULL',
 
         ], $tableOptions);
+
+        $this->batchInsert('seo', ['title', 'descr', 'seo_key', 'keywords'], [
+            ['Главная заголовок', 'Главная описание', 'main_page', 'ключ 1, ключ 2'],
+        ]);
     }
 
     public function down()
