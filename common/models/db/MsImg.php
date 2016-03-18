@@ -5,22 +5,20 @@ namespace common\models\db;
 use Yii;
 
 /**
- * This is the model class for table "ms_slider".
+ * This is the model class for table "ms_img".
  *
  * @property integer $id
- * @property string $title
- * @property string $descr
  * @property string $photo
  * @property integer $dt_add
  */
-class MsSlider extends \yii\db\ActiveRecord
+class MsImg extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'ms_slider';
+        return 'ms_img';
     }
 
     /**
@@ -29,10 +27,8 @@ class MsSlider extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'photo', 'dt_add'], 'required'],
-            [['descr'], 'string'],
+            [['photo', 'dt_add'], 'required'],
             [['dt_add'], 'integer'],
-            [['title'], 'string', 'max' => 255],
             [['photo'], 'string', 'max' => 155]
         ];
     }
@@ -44,9 +40,7 @@ class MsSlider extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Название',
-            'descr' => 'Описание',
-            'photo' => 'Фото',
+            'photo' => 'Photo',
             'dt_add' => 'Dt Add',
         ];
     }

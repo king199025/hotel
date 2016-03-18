@@ -31,7 +31,7 @@ AppAsset::register($this);
 
 <?= Header::widget();?>
 
-<section class="content">
+<!--<section class="content">-->
     <?= $content ?>
     <!--<div class="container">
         <div class="row">
@@ -308,11 +308,11 @@ AppAsset::register($this);
             </div>
         </div>
     </div>-->
-</section>
+<!--</section>-->
 
 <?= FooterPages::widget(); ?>
 
-<a href="#" id='Go_Top'><img alt="up" src="img/up.png"></a>
+<a href="#" id='Go_Top'><img alt="up" src="/img/up.png"></a>
 
 <?php $this->endBody() ?>
 </body>

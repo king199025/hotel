@@ -103,3 +103,15 @@ a.desc:after {
 .nav > li > form > button:hover {
     text-decoration: none;
 }
+
+.border-black td {
+     border:1px solid #3c8dbc!important;
+}
+
+.border-black th {
+    border:1px solid #3c8dbc!important;
+}
+
+.border-black {
+    margin-top: 20px;
+}

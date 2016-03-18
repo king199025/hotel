@@ -63,6 +63,7 @@ return [
                 '' => 'mainpage/default',
                 'news' => 'news/default',
                 '//*'=>'/',
+                'ms/events' => 'ms/default/events'
             ]
         ],
         'mailer' => [
@@ -76,6 +77,9 @@ return [
         ],
         'news' => [
             'class' => 'frontend\modules\news\News',
+        ],
+        'ms' => [
+            'class' => 'frontend\modules\ms\Ms',
         ],
     ],
     'params' => $params,

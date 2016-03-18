@@ -33,7 +33,7 @@ class Events extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'dt_event', 'lang_id'], 'required'],
-            [['dt_add', 'dt_event', 'user_id', 'lang_id'], 'integer'],
+            [['dt_add', 'user_id', 'lang_id'], 'integer'],
             [['descr'], 'string'],
             [['title', 'photo'], 'string', 'max' => 255]
         ];
