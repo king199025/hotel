@@ -147,7 +147,6 @@ class NewsController extends Controller
         $categ = CategoryNews::find()->where(['lang_id'=>$_POST['langId']])->all();
         echo Html::label('Категория', 'news-cat_id', ['class' => 'control-label']);
         echo Html::dropDownList('News[cat_id]',null, ArrayHelper::map($categ,'id','title'),['prompt'=>'Выберите категорию','class' => 'form-control']);
-
     }
 }
 

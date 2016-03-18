@@ -53,4 +53,9 @@ class News extends \yii\db\ActiveRecord
             'cat_id' => 'Категория',
         ];
     }
+
+    public function getcategory_news()
+    {
+        return $this->hasOne(CategoryNews::className(), ['id' => 'cat_id']);
+    }
 }

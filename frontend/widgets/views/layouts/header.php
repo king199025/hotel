@@ -86,7 +86,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="nav__link" href="news.html">Новости</a></li>
+                            <li><a class="nav__link" href="<?= \yii\helpers\Url::to(['/news']); ?>">Новости</a></li>
                             <li>
                                 <a href="#" class="dropdown-toggle nav__link" data-toggle="dropdown" role="button"
                                    aria-haspopup="true" aria-expanded="false">Офисы</a>
