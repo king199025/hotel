@@ -46,5 +46,20 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: 0}, "slow");
         return false;
     });
+
+    $('#more-events').on('click', function(){
+        var count = parseInt($(this).attr('data-count'),10);
+        $(this).attr('data-count', count + 1);
+        var csrf = $(this).attr('data-csrf');
+        $.ajax({
+            type: 'POST',
+            url: "/ms/default/ajax_get_events/",
+            data: 'count=' + count + '&_csrf=' + csrf,
+            success: function (data) {
+                $("#more-events-box").append(data);
+            }
+        });
+        return false;
+    });
 });
 
