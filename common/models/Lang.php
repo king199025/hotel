@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+use common\models\db\CategoryNews;
 use Yii;
 
 /**
