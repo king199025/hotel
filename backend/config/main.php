@@ -27,6 +27,9 @@ return [
         'seo' => [
             'class' => 'backend\modules\seo\Seo',
         ],
+        'ms' => [
+            'class' => 'backend\modules\ms\Ms',
+        ],
     ],
     'components' => [
         'request' => [
@@ -58,6 +61,7 @@ return [
                 'news' => 'news/news',
                 'news/create' => 'news/news/create',
                 'category_news' => 'category_news/category_news',
+                'ms' => 'ms/default',
             ],
         ],
 

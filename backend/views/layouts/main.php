@@ -34,7 +34,7 @@ AppAsset::register($this);
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="<?= Url::to(['/']) ?>" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini">Админпанель</span>
             <!-- logo for regular state and mobile devices -->
@@ -129,6 +129,7 @@ AppAsset::register($this);
                         </li>
                     </ul>
                 </li>
+                <li><a href="<?= Url::to(['/ms']) ?>"><i class="fa fa-th"></i> <span>Mercury Space</span></a></li>
             </ul>
         </section>
         <!-- /.sidebar -->
