@@ -10,6 +10,7 @@ namespace common\classes;
 
 
 use common\models\db\Seo;
+use common\models\Lang;
 use common\models\User;
 
 class Helper
@@ -28,6 +29,11 @@ class Helper
     public static function getMainSeo()
     {
         return Seo::find()->where(['seo_key'=>'main_page'])->one();
+    }
+
+    public static function getLangId()
+    {
+        return Lang::findOne(['local' => \Yii::$app->language])->id;
     }
 
 }

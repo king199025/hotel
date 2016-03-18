@@ -54,7 +54,7 @@ use yii\widgets\ActiveForm;
             'id' => 'events-photo',
 
             'template'      => '<div class="input-group">{input}<span class="span-btn">{button}</span></div>',
-            'options'       => ['class' => 'form-control'],
+            'options'       => ['class' => 'form-control itemImg'],
             'buttonOptions' => ['class' => 'btn btn-primary'],
             'value' => $model->photo,
             'buttonName' => 'Выбрать изображение'
