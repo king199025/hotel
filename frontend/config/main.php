@@ -61,6 +61,7 @@ return [
             'class'=>'frontend\components\LangUrlManager',
             'rules'=>[
                 '' => 'mainpage/default',
+                'news' => 'news/default',
                 '//*'=>'/',
             ]
         ],
@@ -72,6 +73,9 @@ return [
     'modules' => [
         'mainpage' => [
             'class' => 'frontend\modules\mainpage\Mainpage',
+        ],
+        'news' => [
+            'class' => 'frontend\modules\news\News',
         ],
     ],
     'params' => $params,

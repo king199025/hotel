@@ -14,6 +14,7 @@ use Yii;
  * @property integer $default
  * @property integer $date_update
  * @property integer $date_create
+ * @property string $img
  */
 class Lang extends \yii\db\ActiveRecord
 {
@@ -45,9 +46,9 @@ class Lang extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['url', 'local', 'name', 'date_update', 'date_create'], 'required'],
+            [['url', 'local', 'name', 'date_update', 'date_create', 'img'], 'required'],
             [['default', 'date_update', 'date_create'], 'integer'],
-            [['url', 'local', 'name'], 'string', 'max' => 255]
+            [['url', 'local', 'name','img'], 'string', 'max' => 255]
         ];
     }
 
