@@ -312,7 +312,7 @@ AppAsset::register($this);
 
 <?= FooterPages::widget(); ?>
 
-<a href="#" id='Go_Top'><img alt="up" src="img/up.png"></a>
+<a href="#" id='Go_Top'><img alt="up" src="/img/up.png"></a>
 
 <?php $this->endBody() ?>
 </body>

@@ -62,6 +62,7 @@ return [
             'rules'=>[
                 '' => 'mainpage/default',
                 'news' => 'news/default',
+                'news/<id:\d+>' => 'news/default/view',
                 '//*'=>'/',
             ]
         ],
