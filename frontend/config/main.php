@@ -17,7 +17,7 @@ return [
             'baseUrl' => '',
         ],
         'language'=>'ru-RU',
-        /*'i18n' => [
+        'i18n' => [
             'translations' => [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
@@ -28,7 +28,7 @@ return [
                     ],
                 ],
             ],
-        ],*/
+        ],
 
         /*'user' => [
             'identityClass' => 'dektrium\user\Module',

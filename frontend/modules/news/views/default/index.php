@@ -1,6 +1,9 @@
 <?php
 
 /* @var $news */
+/* @var $newsCount */
+/* @var $page */
+/* @var $limit */
 
 use yii\helpers\Url;
 
@@ -51,5 +54,14 @@ $this->title = 'Новости';
             <?php endif; ?>
         <?php $i++; endforeach;?>
     </div>
+
+    <?php if (($limit * $page) < $newsCount): ?>
+
+            <div class="space--more">
+                <a href="#" data-csrf="<?= Yii::$app->request->getCsrfToken()?>" id="more-news" data-count="<?= $page; ?>">ПОСМОТРЕТЬ ЕЩЕ НОВОСТИ</a>
+            </div>
+        <span class="ajaxNews"></span>
+    <?php endif; ?>
+
 </div>
 </section>

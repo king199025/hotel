@@ -24,18 +24,18 @@ $this->title = $news->title;
 
                             </div>
 
-                            <div class="content__press--main__social">
+                            <!--<div class="content__press--main__social">
                                 <a href="#">
                                     <i class="fa fa-facebook-official">Like</i>
                                 </a>
-                            </div>
+                            </div>-->
                             <div class="content__press--main__social">
                                 <a href="#">
                                     <i class="fa fa-facebook-official">SHARE</i>
                                 </a>
                             </div>
                             <div class="content__press--main__social">
-                                <a href="#">
+                                <a href="#" onclick="window.open('http://vkontakte.ru/share.php?url='+encodeURIComponent(location.href));return false;" rel="nofollow" style="text-decoration:none;" title="Поделиться ВКонтакте">
                                     <i class="fa fa-vk">SHARE</i>
                                 </a>
                             </div>

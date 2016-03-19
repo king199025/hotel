@@ -2,25 +2,43 @@
 
 namespace frontend\modules\news\controllers;
 
-use common\classes\Debug;
 use common\classes\Helper;
 use common\models\db\News;
 use yii\web\Controller;
 
 class DefaultController extends Controller
 {
+    public $lang;
     public $layout = 'page';
+    public $limit = 14;
+
+    public function beforeAction($action)
+    {
+        $this->lang = Helper::getLangId();
+        return parent::beforeAction($action);
+    }
+
 
     public function actionIndex()
     {
-        //$lang = Helper::getLangId();
-        $news = News::find()
-            ->where(['lang_id' => Helper::getLangId()])
-            ->limit(14)
+        $query = News::find();
+
+        $newsCount = $query->where(['lang_id' => $this->lang])->count();
+
+        $news = $query
+            ->where(['lang_id' => $this->lang])
+            ->limit($this->limit)
             ->orderBy('dt_add DESC')
             ->all();
-        //Debug::prn($news);
-        return $this->render('index',['news' => $news]);
+
+        $page = 1;
+        return $this->render('index',
+            [
+                'news' => $news,
+                'newsCount' => $newsCount,
+                'page' => $page,
+                'limit' => $this->limit,
+            ]);
     }
 
     public function actionView(){
@@ -30,5 +48,27 @@ class DefaultController extends Controller
                 'news' => News::findOne($_GET['id']),
             ]
         );
+    }
+
+    public function actionAjax_get_news(){
+        $query = News::find();
+
+        $newsCount = $query->where(['lang_id' => $this->lang])->count();
+
+        $news = $query
+            ->where(['lang_id' => $this->lang])
+            ->offset($_POST['page'] * $this->limit)
+            ->limit($this->limit)
+            ->orderBy('dt_add DESC')
+            ->all();
+
+        $page = $_POST['page'] + 1;
+        return $this->renderPartial('ajax_index',
+            [
+                'news' => $news,
+                'newsCount' => $newsCount,
+                'page' => $page,
+                'limit' => $this->limit,
+            ]);
     }
 }
