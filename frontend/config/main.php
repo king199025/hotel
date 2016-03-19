@@ -21,11 +21,11 @@ return [
             'translations' => [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@frontend/messages',
-                    'sourceLanguage' => 'en',
-                    'fileMap' => [
-                        //'main' => 'main.php',
-                    ],
+                    'basePath' => '@frontend/language',
+                    /*'sourceLanguage' => 'en',*/
+                    /*'fileMap' => [
+                        'button' => 'button.php',
+                    ],*/
                 ],
             ],
         ],

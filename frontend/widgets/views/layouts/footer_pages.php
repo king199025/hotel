@@ -8,33 +8,33 @@
                         <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
                             <ul>
                                 <li>
-                                    <a href="#">Репутация</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_REP'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Рекомендации</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_RECOMMENDATIONS'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Отзывы клиентов</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_CUSTOMER_REVIEWS'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Мнения известных людей</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_OPINION_FAMOUS_PEOPLE'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">пресс-центр</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_PRESS_ROOM'); ?></a>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <a href="#">Партнеры</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_PARTNERS'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Консъерж-сервис</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_CONCIERGE_SERVICE'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Клуб</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_CLUB'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Москва-Сити</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_MOSCOW_CITY'); ?></a>
                                 </li>
                             </ul>
                             <ul>

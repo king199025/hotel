@@ -7,7 +7,7 @@
 
 use yii\helpers\Url;
 
-$this->title = 'Новости';
+$this->title = Yii::t('title','TITLE_NEWS');
 ?>
 <section class="content">
 <div class="container">
@@ -55,13 +55,15 @@ $this->title = 'Новости';
         <?php $i++; endforeach;?>
     </div>
 
-    <?php if (($limit * $page) < $newsCount): ?>
+   <!-- --><?php /*if (($limit * $page) < $newsCount): */?>
 
             <div class="space--more">
-                <a href="#" data-csrf="<?= Yii::$app->request->getCsrfToken()?>" id="more-news" data-count="<?= $page; ?>">ПОСМОТРЕТЬ ЕЩЕ НОВОСТИ</a>
+                <a href="#" data-csrf="<?= Yii::$app->request->getCsrfToken()?>" id="more-news" data-count="<?= $page; ?>">
+                    <?= Yii::t('button','BUTTON_MORE_NEWS'); ?>
+                    <!--ПОСМОТРЕТЬ ЕЩЕ НОВОСТИ--></a>
             </div>
         <span class="ajaxNews"></span>
-    <?php endif; ?>
+    <?php /*endif; */?>
 
 </div>
 </section>

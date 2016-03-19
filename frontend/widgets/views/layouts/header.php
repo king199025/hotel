@@ -34,18 +34,18 @@
                     </div>
 
                     <ul class="header__container-right--menu">
-                        <li><a href="">Репутация</a></li>
-                        <li><a href="">Рекомендации</a></li>
-                        <li><a href="">Отзывы клиентов</a></li>
-                        <li><a href="">Мнения известных людей</a></li>
-                        <li><a href="">пресс-центр</a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_REP'); ?></a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_RECOMMENDATIONS'); ?></a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_CUSTOMER_REVIEWS'); ?></a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_OPINION_FAMOUS_PEOPLE'); ?></a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_PRESS_ROOM'); ?></a></li>
                     </ul>
 
                     <ul class="header__container-right--menu">
-                        <li><a href="">Партнеры</a></li>
-                        <li><a href="">Консъерж-сервис</a></li>
-                        <li><a href="">Клуб</a></li>
-                        <li><a href="">Москва-Сити</a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_PARTNERS'); ?></a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_CONCIERGE_SERVICE'); ?></a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_CLUB'); ?></a></li>
+                        <li><a href=""><?= Yii::t('menu', 'HEADER_MENU_MOSCOW_CITY'); ?></a></li>
                     </ul>
 
                 </div>
