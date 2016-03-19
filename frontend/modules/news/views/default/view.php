@@ -18,9 +18,9 @@ $this->title = $news->title;
                                 <?php if(!empty($news->images)): ?>
                                     <img src="<?= $news->images;?>" alt=""/>
                                 <?php endif; ?>
-                                <p class="content__press--main__date"><?= date('d-m-Y')?></p>
+                                <p class="content__press--main__date"><?= date('d-m-Y'); ?></p>
 
-                                <p class="content__press--main__imgtext"><?= $news->title?></p>
+                                <p class="content__press--main__imgtext"><?= $news->title; ?></p>
 
                             </div>
 
