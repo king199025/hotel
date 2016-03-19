@@ -11,4 +11,12 @@ return[
     'HEADER_MENU_MOSCOW_CITY' =>'MOSCOW CITY',
 
     'HEADER_MENU_HOME' => 'Home',
+    'HEADER_MENU_M_C_T' => 'Mercury City Tower',
+    'HEADER_MENU_NEWS' => 'Новости',
+    'HEADER_MENU_OFFICES' => 'Offices',
+    'HEADER_MENU_APARTMENTS' => 'Apartments',
+    'HEADER_MENU_RETAIL' => 'Retail',
+    'HEADER_MENU_M_S' => 'Mercury Space',
+    'HEADER_MENU_GALLERY' => 'GALLERY',
+    'HEADER_MENU_CONTACTS' => 'CONTACTS',
 ];

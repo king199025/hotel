@@ -39,30 +39,30 @@
                             </ul>
                             <ul>
                                 <li>
-                                    <a href="#">Меркурий Сити Тауэр </a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_M_C_T'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">НОВОСТИ</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_NNEWS'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Офисы</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_OFFICES'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Апартаменты</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_APARTMENTS'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">Ритейл</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_RETAIL'); ?></a>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
-                                    <a href="#">Mercury Space</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_M_S'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">ГАЛЕРЕЯ</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_GALLERY'); ?></a>
                                 </li>
                                 <li>
-                                    <a href="#">КОНТАКТЫ</a>
+                                    <a href="#"><?= Yii::t('menu', 'HEADER_MENU_CONTACTS'); ?></a>
                                 </li>
                             </ul>
                         </div>

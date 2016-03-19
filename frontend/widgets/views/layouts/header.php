@@ -70,11 +70,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a class="nav__link" href="index.html">Главная</a></li>
+                            <li><a class="nav__link" href="index.html"><?= Yii::t('menu', 'HEADER_MENU_HOME'); ?></a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle nav__link"
                                    data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Меркурий Сити Тауэр</a>
+                                   aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_M_C_T'); ?></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown__link"><a class="nav__link" href="mercury_city_tower.html">О проекте</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="mercury_city_tower.html">Структура</a></li>
@@ -86,10 +86,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="nav__link" href="<?= \yii\helpers\Url::to(['/news']); ?>">Новости</a></li>
+                            <li><a class="nav__link" href="<?= \yii\helpers\Url::to(['/news']); ?>"><?= Yii::t('menu', 'HEADER_MENU_NEWS'); ?></a></li>
                             <li>
                                 <a href="#" class="dropdown-toggle nav__link" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Офисы</a>
+                                   aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_OFFICES'); ?></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown__link"><a class="nav__link" href="offices.html">Технические
                                             характеристики</a></li>
@@ -105,7 +105,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle nav__link" data-toggle="dropdown"
                                    role="button"
-                                   aria-haspopup="true" aria-expanded="false">Апартаменты</a>
+                                   aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_APARTMENTS'); ?></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown__link"><a class="nav__link" href="apartments.html">Планировки</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="apartments.html">Отделка</a></li>
@@ -118,7 +118,7 @@
                             </li>
                             <li>
                                 <a href="#" class="dropdown-toggle nav__link" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Ритейл</a>
+                                   aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_RETAIL'); ?></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown__link"><a class="nav__link" href="retail.html">Планировки</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="#">3-d экскурсия по этажу</a>
@@ -132,7 +132,7 @@
                             <li>
                                 <a href="#" class="dropdown-toggle nav__link" data-toggle="dropdown"
                                    role="button"
-                                   aria-haspopup="true" aria-expanded="false">Mercury Space</a>
+                                   aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_M_S'); ?></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown__link"><a class="nav__link" href="mercury-space.html">Календарь мероприятий</a>
                                     </li>
@@ -148,8 +148,8 @@
                                     <li class="dropdown__link"><a class="nav__link" href="contacts.html">Контакты</a></li>
                                 </ul>
                             </li>
-                            <li><a class="nav__link" href="#">Галерея</a></li>
-                            <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+                            <li><a class="nav__link" href="#"><?= Yii::t('menu', 'HEADER_MENU_GALLERY'); ?></a></li>
+                            <li><a class="nav__link" href="contacts.html"><?= Yii::t('menu', 'HEADER_MENU_CONTACTS'); ?></a></li>
                         </ul>
 
                     </div>

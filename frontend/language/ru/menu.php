@@ -11,6 +11,13 @@ return[
     'HEADER_MENU_MOSCOW_CITY' => 'МОСКВА-СИТИ',
 
     'HEADER_MENU_HOME' => 'Главная',
-
+    'HEADER_MENU_M_C_T' => 'Меркурий Сити Тауэр',
+    'HEADER_MENU_NEWS' => 'Новости',
+    'HEADER_MENU_OFFICES' => 'Офисы',
+    'HEADER_MENU_APARTMENTS' => 'Апартаменты',
+    'HEADER_MENU_RETAIL' => 'Ритейл',
+    'HEADER_MENU_M_S' => 'Mercury Space',
+    'HEADER_MENU_GALLERY' => 'ГАЛЕРЕЯ',
+    'HEADER_MENU_CONTACTS' => 'КОНТАКТЫ',
 
 ];
