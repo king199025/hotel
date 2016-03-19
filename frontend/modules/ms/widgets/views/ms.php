@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 
-$this->title = "MS";
 ?>
 <!-- open .head-slideer -->
 <section class="head-slider">

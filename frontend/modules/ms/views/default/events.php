@@ -2,6 +2,7 @@
 use frontend\modules\ms\widgets\MercurySpace;
 use yii\helpers\Html;
 
+$this->title = "Мероприятия";
 ?>
 
 <?= MercurySpace::widget() ?>
@@ -36,10 +37,10 @@ use yii\helpers\Html;
                 <!-- close .col-lg-3 col-md-3 col-sm-6 col-xs-12 pad0 -->
             <?php endforeach; ?>
 
-
+            <span id="more-events-box"></span>
             <!-- open .space--more -->
             <div class="space--more">
-                <a href="#" id="more-events" data-count="1">ПОСМОТРЕТЬ ДРУГИЕ МЕРОПРИЯТИЯ</a>
+                <a href="#" data-csrf="<?=Yii::$app->request->getCsrfToken()?>" id="more-events" data-count="1">ПОСМОТРЕТЬ ДРУГИЕ МЕРОПРИЯТИЯ</a>
             </div>
             <!-- close .space--more -->
         </div>
