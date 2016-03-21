@@ -29,8 +29,10 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/jquery-2.1.4.js',
         'js/bootstrap.min.js',
+        'http://api-maps.yandex.ru/2.1/?lang=ru_RU',
         'js/fotorama.js',
         'js/skript.js',
+        'js/application.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

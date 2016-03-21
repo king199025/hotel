@@ -64,7 +64,9 @@ return [
                 'news' => 'news/default',
                 'news/<id:\d+>' => 'news/default/view',
                 '//*'=>'/',
-                'ms/events' => 'ms/default/events'
+                'ms/events' => 'ms/default/events',
+                'ms' => 'ms/default',
+                'contacts' => 'contacts/default'
             ]
         ],
         'mailer' => [
@@ -81,6 +83,9 @@ return [
         ],
         'ms' => [
             'class' => 'frontend\modules\ms\Ms',
+        ],
+        'contacts' => [
+            'class' => 'frontend\modules\contacts\Contacts',
         ],
     ],
     'params' => $params,

@@ -1,3 +1,4 @@
+<?php use yii\helpers\Url; ?>
 <header>
     <div class="container">
         <div class="row">
@@ -7,7 +8,6 @@
 
                     <!--<a href=""><img src="img/rf.png" alt="Russian"/></a>
                     <a href=""><img src="img/gb.png" alt="English"/></a>-->
-
                     <?= \frontend\widgets\ShowLang::widget(); ?>
 
                     <h3><span>8.495.</span>651.651.0</h3>
@@ -70,7 +70,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a class="nav__link" href="index.html"><?= Yii::t('menu', 'HEADER_MENU_HOME'); ?></a></li>
+                            <li><a class="nav__link" href="/"><?= Yii::t('menu', 'HEADER_MENU_HOME'); ?></a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle nav__link"
                                    data-toggle="dropdown" role="button"
@@ -86,7 +86,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="nav__link" href="<?= \yii\helpers\Url::to(['/news']); ?>"><?= Yii::t('menu', 'HEADER_MENU_NEWS'); ?></a></li>
+                            <li><a class="nav__link" href="<?= Url::to(['/news']); ?>"><?= Yii::t('menu', 'HEADER_MENU_NEWS'); ?></a></li>
                             <li>
                                 <a href="#" class="dropdown-toggle nav__link" data-toggle="dropdown" role="button"
                                    aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_OFFICES'); ?></a>
@@ -136,7 +136,7 @@
                                 <ul class="dropdown-menu">
                                     <li class="dropdown__link"><a class="nav__link" href="mercury-space.html">Календарь мероприятий</a>
                                     </li>
-                                    <li class="dropdown__link"><a class="nav__link" href="mercury-space.html">Мероприятия</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/ms/events']) ?>">Мероприятия</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="mercury-space.html">Билеты и пакеты</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="mercury-space.html">Запланировать визит</a>
                                     </li>
@@ -145,11 +145,11 @@
                                     <li class="dropdown__link"><a class="nav__link" href="mercury-space.html">Подарочная карта</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="mercury-space.html">Туризм и группы</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="mercury-space.html">Магазин</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/contacts']) ?>">Контакты</a></li>
                                 </ul>
                             </li>
                             <li><a class="nav__link" href="#"><?= Yii::t('menu', 'HEADER_MENU_GALLERY'); ?></a></li>
-                            <li><a class="nav__link" href="contacts.html"><?= Yii::t('menu', 'HEADER_MENU_CONTACTS'); ?></a></li>
+                            <li><a class="nav__link" href="<?= Url::to(['/contacts']) ?>"><?= Yii::t('menu', 'HEADER_MENU_CONTACTS'); ?></a></li>
                         </ul>
 
                     </div>

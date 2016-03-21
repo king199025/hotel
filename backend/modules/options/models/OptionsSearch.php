@@ -19,7 +19,7 @@ class OptionsSearch extends Options
     {
         return [
             [['id', 'dt_add', 'dt_update'], 'integer'],
-            [['opt_key', 'opt_value'], 'safe'],
+            [['opt_key', 'opt_value', 'opt_title'], 'safe'],
         ];
     }
 
@@ -62,7 +62,8 @@ class OptionsSearch extends Options
         ]);
 
         $query->andFilterWhere(['like', 'opt_key', $this->opt_key])
-            ->andFilterWhere(['like', 'opt_value', $this->opt_value]);
+            ->andFilterWhere(['like', 'opt_value', $this->opt_value])
+            ->andFilterWhere(['like', 'opt_title', $this->opt_value]);
 
         return $dataProvider;
     }
