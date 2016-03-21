@@ -16,14 +16,14 @@ return [
             'class' => 'frontend\components\LangRequest',
             'baseUrl' => '',
         ],
-        'language'=>'ru-RU',
+        'language' => 'ru-RU',
         'i18n' => [
             'translations' => [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@frontend/language',
-                    /*'sourceLanguage' => 'en',*/
-                    /*'fileMap' => [
+                    /*'sourceLanguage' => 'en',
+                    'fileMap' => [
                         'button' => 'button.php',
                     ],*/
                 ],
@@ -58,12 +58,12 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'class'=>'frontend\components\LangUrlManager',
-            'rules'=>[
+            'class' => 'frontend\components\LangUrlManager',
+            'rules' => [
                 '' => 'mainpage/default',
                 'news' => 'news/default',
                 'news/<id:\d+>' => 'news/default/view',
-                '//*'=>'/',
+                '//*' => '/',
                 'ms/events' => 'ms/default/events',
                 'ms' => 'ms/default',
                 'contacts' => 'contacts/default'
@@ -86,6 +86,9 @@ return [
         ],
         'contacts' => [
             'class' => 'frontend\modules\contacts\Contacts',
+        ],
+        'mercury_city_tower' => [
+            'class' => 'frontend\modules\mercury_city_tower\mercury_city_tower',
         ],
     ],
     'params' => $params,
