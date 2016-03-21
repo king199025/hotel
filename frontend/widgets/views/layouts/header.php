@@ -13,7 +13,7 @@
                     <h3><span>8.495.</span>651.651.0</h3>
 
                     <p>123100, г. Москва, 1-й Красногвардейский проезд, д. 15</p>
-                    <button id="request_call" class="footer__send--btn">заказть звонок</button>
+                    <button id="request_call" class="footer__send--btn"><?= Yii::t('button', 'REQUEST_A_CALL') ?></button>
                 </div>
 
             </div>

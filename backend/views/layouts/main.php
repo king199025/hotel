@@ -101,7 +101,7 @@ AppAsset::register($this);
                 <li class="header">Навигация</li>
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>Новости</span> <i class="fa fa-angle-left pull-right"></i>
+                        <i class="fa fa-newspaper-o"></i> <span>Новости</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
                         <li class="active"><a href="<?= Url::to(['/news/create']);?>"><i class="fa fa-circle-o"></i>Добавить новость</a></li>
@@ -118,7 +118,7 @@ AppAsset::register($this);
                         <li><a href="<?= Url::to(['/events']) ?>"><i class="fa fa-circle-o"></i>Все мероприятия</a></li>
                     </ul>
                 </li>
-                <li><a href="<?= Url::to(['/lang']) ?>"><i class="fa fa-book"></i> <span>Языки</span></a></li>
+                <li><a href="<?= Url::to(['/lang']) ?>"><i class="fa fa-flag-o"></i> <span>Языки</span></a></li>
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-dashboard"></i> <span>SEO</span> <i class="fa fa-angle-left pull-right"></i>
@@ -129,7 +129,19 @@ AppAsset::register($this);
                         </li>
                     </ul>
                 </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i> <span>Материалы</span> <i class="fa fa-angle-left pull-right"></i>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active">
+                            <a href="<?= Url::to(['/materials/materials/create']);?>"><i class="fa fa-circle-o"></i>Добавить материал</a>
+                            <a href="<?= Url::to(['/materials']);?>"><i class="fa fa-circle-o"></i>Все материалы</a>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="<?= Url::to(['/ms']) ?>"><i class="fa fa-th"></i> <span>Mercury Space</span></a></li>
+                <li><a href="<?= Url::to(['/options']) ?>"><i class="fa fa-cog"></i> <span>Опции</span></a></li>
             </ul>
         </section>
         <!-- /.sidebar -->

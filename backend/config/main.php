@@ -30,6 +30,12 @@ return [
         'ms' => [
             'class' => 'backend\modules\ms\Ms',
         ],
+        'materials' => [
+            'class' => 'backend\modules\materials\Materials',
+        ],
+        'options' => [
+            'class' => 'backend\modules\options\Options',
+        ],
     ],
     'components' => [
         'request' => [
@@ -62,6 +68,8 @@ return [
                 'news/create' => 'news/news/create',
                 'category_news' => 'category_news/category_news',
                 'ms' => 'ms/default',
+                'materials' => 'materials/materials',
+                'options' => 'options/options',
             ],
         ],
 
