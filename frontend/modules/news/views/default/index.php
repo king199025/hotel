@@ -26,7 +26,7 @@ $this->title = Yii::t('title','TITLE_NEWS');
                         <div class="content__press--center__text">
                             <p><?= $n->title;?></p>
 
-                            <a class="content__press--link" href="<?= Url::to(['view','id'=>$n->id]); ?>">читать &rarr;</a>
+                            <a class="content__press--link" href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?> &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ $this->title = Yii::t('title','TITLE_NEWS');
                         <div class="content__press--right">
                             <p class="content__press--date"><?= date('d-m-Y', $n->dt_add); ?></p>
                                 <h3><?= $n->title;?></h3>
-                            <a href="<?= Url::to(['view','id'=>$n->id]); ?>">читать &rarr;</a>
+                            <a href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?> &rarr;</a>
                         </div>
                     </div>
                 <?php else: ?>
@@ -47,7 +47,7 @@ $this->title = Yii::t('title','TITLE_NEWS');
                                 <p class="content__press--date"><?= date('d-m-Y', $n->dt_add); ?></p>
                             </div>
                             <p><?= $n->title;?></p>
-                            <a class="content__press--link" href="<?= Url::to(['view','id'=>$n->id]); ?>">читать &rarr;</a>
+                            <a class="content__press--link" href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?> &rarr;</a>
                         </div>
                     </div>
                 <?php endif ?>

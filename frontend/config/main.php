@@ -22,8 +22,8 @@ return [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'basePath' => '@frontend/language',
-                    /*'sourceLanguage' => 'en',*/
-                    /*'fileMap' => [
+                    /*'sourceLanguage' => 'en',
+                    'fileMap' => [
                         'button' => 'button.php',
                     ],*/
                 ],
@@ -81,6 +81,9 @@ return [
         ],
         'ms' => [
             'class' => 'frontend\modules\ms\Ms',
+        ],
+        'mercury_city_tower' => [
+            'class' => 'frontend\modules\mercury_city_tower\mercury_city_tower',
         ],
     ],
     'params' => $params,
