@@ -66,7 +66,8 @@ return [
                 '//*' => '/',
                 'ms/events' => 'ms/default/events',
                 'ms' => 'ms/default',
-                'contacts' => 'contacts/default'
+                'contacts' => 'contacts/default',
+                'mercury_city_tower' => 'mercury_city_tower/default'
             ]
         ],
         'mailer' => [

@@ -36,6 +36,9 @@ return [
         'options' => [
             'class' => 'backend\modules\options\Options',
         ],
+        'mercury_city_tower' => [
+            'class' => 'backend\modules\mercury_city_tower\MercuryCityTower',
+        ],
     ],
     'components' => [
         'request' => [
@@ -70,6 +73,7 @@ return [
                 'ms' => 'ms/default',
                 'materials' => 'materials/materials',
                 'options' => 'options/options',
+                'mercury_city_tower' => 'mercury_city_tower/default',
             ],
         ],
 

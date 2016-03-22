@@ -141,6 +141,7 @@ AppAsset::register($this);
                     </ul>
                 </li>
                 <li><a href="<?= Url::to(['/ms']) ?>"><i class="fa fa-th"></i> <span>Mercury Space</span></a></li>
+                <li><a href="<?= Url::to(['/mercury_city_tower']) ?>"><i class="fa fa-th"></i> <span>Меркурий Сити Тауэр</span></a></li>
                 <li><a href="<?= Url::to(['/options']) ?>"><i class="fa fa-cog"></i> <span>Опции</span></a></li>
             </ul>
         </section>
