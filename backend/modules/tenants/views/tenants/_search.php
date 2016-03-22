@@ -19,8 +19,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'level') ?>
 
-    <?= $form->field($model, 'images') ?>
-
     <?= $form->field($model, 'logo_company') ?>
 
     <?= $form->field($model, 'site_company') ?>

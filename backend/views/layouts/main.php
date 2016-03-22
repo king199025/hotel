@@ -145,7 +145,7 @@ AppAsset::register($this);
                 <li><a href="<?= Url::to(['/options']) ?>"><i class="fa fa-cog"></i> <span>Офисы</span></a>
                     <ul class="treeview-menu">
                         <li class="active">
-                            <a href="<?= Url::to(['/materials/materials/create']);?>"><i class="fa fa-circle-o"></i>Арендаторы</a>
+                            <a href="<?= Url::to(['/tenants']);?>"><i class="fa fa-circle-o"></i>Арендаторы</a>
                         </li>
                     </ul>
 

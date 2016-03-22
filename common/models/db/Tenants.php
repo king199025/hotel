@@ -9,7 +9,6 @@ use Yii;
  *
  * @property integer $id
  * @property integer $level
- * @property string $images
  * @property string $logo_company
  * @property string $site_company
  */
@@ -29,9 +28,9 @@ class Tenants extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['level', 'images', 'logo_company', 'site_company'], 'required'],
+            [['level', 'logo_company', 'site_company'], 'required'],
             [['level'], 'integer'],
-            [['images', 'logo_company', 'site_company'], 'string', 'max' => 255]
+            [['logo_company', 'site_company'], 'string', 'max' => 255]
         ];
     }
 
@@ -42,10 +41,9 @@ class Tenants extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'level' => 'Level',
-            'images' => 'Images',
-            'logo_company' => 'Logo Company',
-            'site_company' => 'Site Company',
+            'level' => 'Этаж',
+            'logo_company' => 'Логотип компании',
+            'site_company' => 'Сайт компании',
         ];
     }
 }
