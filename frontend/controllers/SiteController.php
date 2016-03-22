@@ -18,7 +18,7 @@ use yii\filters\AccessControl;
  */
 class SiteController extends Controller
 {
-    
+
     public $layout = 'page';
     /**
      * @inheritdoc
@@ -141,6 +141,46 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionMercury_city_tower()
+    {
+        return $this->render('mercury_city_tower');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionOffices()
+    {
+        return $this->render('offices');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionApartments()
+    {
+        return $this->render('apartments');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionRetail()
+    {
+        return $this->render('retail');
     }
 
     /**

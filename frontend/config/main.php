@@ -67,7 +67,11 @@ return [
                 'ms/events' => 'ms/default/events',
                 'ms' => 'ms/default',
                 'contacts' => 'contacts/default',
-                'mercury_city_tower' => 'mercury_city_tower/default'
+                //'mercury_city_tower' => 'mercury_city_tower/default',
+                'mercury_city_tower' => '/site/mercury_city_tower',
+                'offices' => '/site/offices',
+                'apartments' => '/site/apartments',
+                'retail' => '/site/retail'
             ]
         ],
         'mailer' => [
