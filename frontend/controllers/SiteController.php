@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\db\Tenants;
 use Yii;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -46,6 +47,7 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
+                    'get_tenants' => ['post'],
                 ],
             ],
         ];
@@ -180,7 +182,8 @@ class SiteController extends Controller
      */
     public function actionRetail()
     {
-        return $this->render('retail');
+        $tenants = Tenants::find()->where(['level' => 1])->all();
+        return $this->render('retail',['tenants' => $tenants]);
     }
 
     /**
@@ -261,5 +264,11 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+
+    public function actionGet_tenants(){
+        $tenants = Tenants::find()->where(['level' => $_POST['level']])->all();
+        return $this->renderPartial('tenants',['tenants' => $tenants]);
+
     }
 }

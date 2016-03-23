@@ -84,11 +84,21 @@ $(document).ready(function(){
     }
 
     $(document).on('click', '.floor', function(){
+        var level = $(this).attr('data-floor');
+        var csrf = $('.renters__floor').attr('data-csrf');
         $('.floor').each(function(){
             $(this).removeClass('floor-active');
         });
         $(this).addClass('floor-active');
-        $('.floor-number').text($(this).attr('data-floor'));
+        $('.floor-number').text(level);
+        $.ajax({
+            type: 'POST',
+            url: "/site/get_tenants",
+            data: 'level=' + level + '&_csrf=' + csrf,
+            success: function (data) {
+                $('.renters__companies').html(data);
+            }
+        });
     });
 
 });

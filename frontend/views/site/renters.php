@@ -13,85 +13,34 @@
                 <h2>АРЕНДАТОРЫ</h2>
                 <p>У «Меркурий Сити» арендуют офисные, торговые и складские помещения более ста предприятий различных видов деятельности.</p>
                 <!-- open .renters__floor -->
-                <h3 class="renters__floor"><span class="floor-number">39</span> <small>этаж</small></h3>
+                <h3 class="renters__floor" data-csrf="<?= Yii::$app->request->getCsrfToken()?>"><span class="floor-number">1</span> <small>этаж</small></h3>
                 <!-- close .renters__floor -->
 
                 <!-- open .renters__companies -->
                 <div class="renters__companies">
-                    <!-- open .row -->
                     <div class="row">
-                        <!-- open .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <!-- open .renters__companies--item -->
-                            <div class="renters__companies--item">
-                                <!-- open .renters__companies--item--logo -->
-                                <div class="renters__companies--item--logo">
-                                    <img src="/img/agip.png" alt="" />
+                        <?php
+                        if(empty($tenants)){
+                            ?>
+                            <span>Арендаторов на этаже нет</span>
+                            <?php
+                        }else{
+                        foreach($tenants as $ten): ?>
+                            <!-- open .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- open .renters__companies--item -->
+                                <div class="renters__companies--item">
+                                    <!-- open .renters__companies--item--logo -->
+                                    <div class="renters__companies--item--logo">
+                                        <img src="<?= $ten->logo_company; ?>" alt="" />
+                                    </div>
+                                    <!-- close .renters__companies--item--logo -->
+                                    <a target="_blank" href="<?= $ten->site_company; ?>"><?= Yii::t('button', 'BUTTON_ABOUT_COMPANY'); ?></a>
                                 </div>
-                                <!-- close .renters__companies--item--logo -->
-                                <a href="#">О компании</a>
+                                <!-- close .renters__companies--item -->
                             </div>
-                            <!-- close .renters__companies--item -->
-                        </div>
-                        <!-- close .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <!-- open .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <!-- open .renters__companies--item -->
-                            <div class="renters__companies--item">
-                                <!-- open .renters__companies--item--logo -->
-                                <div class="renters__companies--item--logo">
-                                    <img src="/img/shell.png" alt="" />
-                                </div>
-                                <!-- close .renters__companies--item--logo -->
-                                <a href="#">О компании</a>
-                            </div>
-                            <!-- close .renters__companies--item -->
-                        </div>
-                        <!-- close .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <!-- open .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <!-- open .renters__companies--item -->
-                            <div class="renters__companies--item">
-                                <!-- open .renters__companies--item--logo -->
-                                <div class="renters__companies--item--logo">
-                                    <img src="/img/lucoil.png" alt="" />
-                                </div>
-                                <!-- close .renters__companies--item--logo -->
-                                <a href="#">О компании</a>
-                            </div>
-                            <!-- close .renters__companies--item -->
-                        </div>
-                        <!-- close .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <!-- open .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <!-- open .renters__companies--item -->
-                            <div class="renters__companies--item">
-                                <!-- open .renters__companies--item--logo -->
-                                <div class="renters__companies--item--logo">
-                                    <img src="/img/vostoktrans.png" alt="" />
-                                </div>
-                                <!-- close .renters__companies--item--logo -->
-                                <a href="#">О компании</a>
-                            </div>
-                            <!-- close .renters__companies--item -->
-                        </div>
-                        <!-- close .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <!-- open .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <!-- open .renters__companies--item -->
-                            <div class="renters__companies--item">
-                                <!-- open .renters__companies--item--logo -->
-                                <div class="renters__companies--item--logo">
-                                    <img src="/img/lacoste.png" alt="" />
-                                </div>
-                                <!-- close .renters__companies--item--logo -->
-                                <a href="#">О компании</a>
-                            </div>
-                            <!-- close .renters__companies--item -->
-                        </div>
-                        <!-- close .col-lg-4 col-md-4 col-sm-4 col-xs-6 -->
+                        <?php endforeach; } ?>
                     </div>
-                    <!-- close .row -->
                 </div>
                 <!-- close .renters__companies -->
             </div>
