@@ -184,6 +184,16 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionTenants()
+    {
+        return $this->render('renters');
+    }
+
+    /**
      * Signs user up.
      *
      * @return mixed

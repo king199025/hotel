@@ -109,3 +109,50 @@ a.desc:after {
     float: left;
     width: 100%;
 }
+
+.tower-scheme {
+    background: url("/img/1.png") no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 784px;
+    padding-top: 94px;
+}
+
+.floor {
+    width: 100%;
+    height: 9.2px;
+    position: relative;
+}
+
+.floor:hover {
+    background-color: rgba(165, 146, 95, 0.4);
+}
+
+.floor span {
+    display: none;
+    position: absolute;
+    top: -40px;
+    font-size: 32px;
+    margin: 0;
+    color: #A5925F;
+    font-family: "QanelasBold";
+}
+
+.floor:hover span {
+    display: block;
+}
+
+.floor-left-span {
+    left: 0;
+}
+.floor-right-span {
+    right: 0;
+}
+
+.floor-active {
+    background-color: rgba(165, 146, 95, 0.4);
+}
+
+.floor-active span {
+    display: block;
+}

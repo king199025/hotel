@@ -39,6 +39,9 @@ return [
         'mercury_city_tower' => [
             'class' => 'backend\modules\mercury_city_tower\MercuryCityTower',
         ],
+        'tenants' => [
+            'class' => 'backend\modules\tenants\Tenants',
+        ],
     ],
     'components' => [
         'request' => [
@@ -74,6 +77,7 @@ return [
                 'materials' => 'materials/materials',
                 'options' => 'options/options',
                 'mercury_city_tower' => 'mercury_city_tower/default',
+                'tenants' => 'tenants/tenants',
             ],
         ],
 

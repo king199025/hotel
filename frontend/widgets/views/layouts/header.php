@@ -99,7 +99,7 @@
                                     <li class="dropdown__link"><a class="nav__link" href="offices.html">3-d экскурсия по этажу</a>
                                     </li>
                                     <li class="dropdown__link"><a class="nav__link" href="offices.html">Выбрать вид</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="renters.html">Арендаторы</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/tenants']);?>">Арендаторы</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">

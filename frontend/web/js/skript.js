@@ -76,5 +76,20 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    var floor;
+    for(var i=0;i<75;i++){
+        floor = 75 - i;
+        $('.tower-scheme').append('<div class="floor" data-floor="' + floor + '"><span class="floor-left-span">'+floor+'</span><span class="floor-right-span">'+floor+'</span></div>');
+    }
+
+    $(document).on('click', '.floor', function(){
+        $('.floor').each(function(){
+            $(this).removeClass('floor-active');
+        });
+        $(this).addClass('floor-active');
+        $('.floor-number').text($(this).attr('data-floor'));
+    });
+
 });
 
