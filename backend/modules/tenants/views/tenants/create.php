@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\modules\tenants\models\Tenants */
 
-$this->title = 'Create Tenants';
-$this->params['breadcrumbs'][] = ['label' => 'Tenants', 'url' => ['index']];
+$this->title = 'Создать';
+$this->params['breadcrumbs'][] = ['label' => 'Арендаторы', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="tenants-create">

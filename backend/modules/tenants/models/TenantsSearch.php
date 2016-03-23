@@ -19,7 +19,7 @@ class TenantsSearch extends Tenants
     {
         return [
             [['id', 'level'], 'integer'],
-            [['images', 'logo_company', 'site_company'], 'safe'],
+            [['logo_company', 'site_company'], 'safe'],
         ];
     }
 
@@ -60,8 +60,7 @@ class TenantsSearch extends Tenants
             'level' => $this->level,
         ]);
 
-        $query->andFilterWhere(['like', 'images', $this->images])
-            ->andFilterWhere(['like', 'logo_company', $this->logo_company])
+        $query->andFilterWhere(['like', 'logo_company', $this->logo_company])
             ->andFilterWhere(['like', 'site_company', $this->site_company]);
 
         return $dataProvider;
