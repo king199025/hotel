@@ -10,7 +10,7 @@ class DefaultController extends Controller
 {
     public $lang;
     public $layout = 'page';
-    public $limit = 14;
+    public $limit = 1;
 
     public function beforeAction($action)
     {
