@@ -44,7 +44,8 @@ use yii\helpers\Url;
                             <!--<p><span>Light a bonfire in the garden, and step bravely into your best-dressed decade</span>
                             </p>-->
 
-                            <button class="footer__send--btn"><a href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?></a></button>
+                            <button class="footer__send--btn">
+                                <a href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?></a></button>
 
                         </div>
 
