@@ -49,12 +49,13 @@ $(document).ready(function(){
 
     $('#more-events').on('click', function(){
         var count = parseInt($(this).attr('data-count'),10);
+        var langId = $('#lang_id').attr('lang-id');
         $(this).attr('data-count', count + 1);
         var csrf = $(this).attr('data-csrf');
         $.ajax({
             type: 'POST',
             url: "/ms/default/ajax_get_events/",
-            data: 'count=' + count + '&_csrf=' + csrf,
+            data: 'count=' + count + '&_csrf=' + csrf + '&lang=' + langId,
             success: function (data) {
                 $("#more-events-box").append(data);
             }

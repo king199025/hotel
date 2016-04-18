@@ -3,6 +3,7 @@
 namespace frontend\modules\ms\controllers;
 
 use common\classes\Debug;
+use common\classes\Helper;
 use common\models\db\Events;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
@@ -29,7 +30,8 @@ class DefaultController extends Controller
     }
 
     public function actionEvents(){
-        $events = Events::find()->limit(4)->all();
+
+        $events = Events::find()->where(['lang_id' => Helper::getLangId()])->limit(4)->all();
         return $this->render('events', [
            'events' =>  $events
         ]);
@@ -37,9 +39,11 @@ class DefaultController extends Controller
 
     public function actionAjax_get_events(){
         $events = Events::find()
+            ->where(['lang_id' => $_POST['lang']])
             ->offset($_POST['count'] * 4)
             ->limit(4)
             ->all();
+
         echo $this->renderPartial('ajax_events', [
             'events' => $events
         ]);

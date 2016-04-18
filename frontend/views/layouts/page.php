@@ -3,6 +3,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use common\classes\Helper;
 use frontend\widgets\FooterMain;
 use frontend\widgets\FooterPages;
 use frontend\widgets\Header;
@@ -309,7 +310,7 @@ AppAsset::register($this);
         </div>
     </div>-->
 <!--</section>-->
-
+<span id="lang_id" lang-id="<?= Helper::getLangId() ?>"></span>
 <?= FooterPages::widget(); ?>
 
 <a href="#" id='Go_Top'><img alt="up" src="/img/up.png"></a>

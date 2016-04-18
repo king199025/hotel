@@ -19,16 +19,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?/*= $form->field($model, 'dt_add')->textInput() */?>
-
     <?= $form->field($model, 'dt_event')->textInput(['id'=>'reservation']) ?>
 
-    <?/*= Html::label('Время', 'timepicker', []) */?><!--
-    --><?/*= Html::textInput('time', null, ['class'=>'form-control', 'id'=>'timepicker']) */?>
     <?= TimePicer::widget() ?>
     <br>
 
-    <?/*= $form->field($model, 'descr')->textarea(['rows' => 6]) */?>
     <?php echo $form->field($model, 'descr')->widget(CKEditor::className(),[
         'editorOptions' => ElFinder::ckeditorOptions('elfinder', [
             'preset' => 'full',
@@ -37,12 +32,10 @@ use yii\widgets\ActiveForm;
         ]),
     ]);?>
 
-    <?/*= $form->field($model, 'user_id')->textInput() */?>
 
     <?= $form->field($model, 'lang_id')->dropDownList(ArrayHelper::map($lang, 'id', 'name'), ['prompt'=>'Выберите язык']) ?>
 
-    <?/*= $form->field($model, 'photo')->textInput(['maxlength' => true]) */?>
-    <div class="imgUpload">
+        <div class="imgUpload">
         <div class="media__upload_img"><img src="<?=$model->photo;?>" width="100px"/></div>
 
         <?php
