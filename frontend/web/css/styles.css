@@ -904,8 +904,8 @@ html, body {
     .content__press--date2 {
       position: absolute;
       z-index: 2;
-      left: 30px;
-      top: 10px;
+      right: 0px;
+      /*top: 10px;*/
       font-family: "GothamProRegular";
       color: black !important; }
     .content__press--link, .content__press .content__press--link:hover, .content__press .content__press--link:focus {
