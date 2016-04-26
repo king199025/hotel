@@ -29,6 +29,9 @@ $this->title = $news->title;
                                     <i class="fa fa-facebook-official">Like</i>
                                 </a>
                             </div>-->
+                            <div class="content__press--main__about">
+                                <?= $news->text; ?>
+                            </div>
                             <div class="content__press--main__social">
                                 <a href="#">
                                     <i class="fa fa-facebook-official">SHARE</i>
@@ -44,9 +47,7 @@ $this->title = $news->title;
                                     <i class="fa fa-twitter">SHARE</i>
                                 </a>
                             </div>
-                            <div class="content__press--main__about">
-                                <?= $news->text; ?>
-                            </div>
+
                             <?= \frontend\modules\news\widget\ReadMore::widget(['newsId' => $news->id]); ?>
 
 
