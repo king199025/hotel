@@ -1,6 +1,6 @@
-html,
-body {
+html{
     height: auto;
+    border: 11px solid #a5925f;
 }
 
 .wrap {

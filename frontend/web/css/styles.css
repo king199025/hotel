@@ -319,9 +319,9 @@ header {
 html, body {
   width: 100%;
   height: auto;
-  border-width: 11px;
-  border-color: #a5925f;
-  border-style: solid;
+  /*border-width: 11px;*/
+  /*border-color: #a5925f;*/
+  /*border-style: solid;*/
   background-color: white; }
 
 /*----Content----*/
