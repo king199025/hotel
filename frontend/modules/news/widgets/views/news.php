@@ -24,7 +24,7 @@ use yii\helpers\Url;
                             <!--spoilers ahead</p>-->
 
                             <div class="content__press--center__link">
-                                <a href="<?= Url::to(['view','id'=>$n->id]); ?>"><img src="img/watch_photo.png" alt="Wath photo"/>
+                                <a href="<?= Url::to(['/news/' . $n->id]); ?>"><img src="img/watch_photo.png" alt="Wath photo"/>
 
                                     <p>WATCH PHOTOS</p></a>
                             </div>
@@ -45,14 +45,14 @@ use yii\helpers\Url;
                             </p>-->
 
                             <button class="footer__send--btn">
-                                <a href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?></a></button>
+                                <a href="<?= Url::to(['/news/' . $n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?></a></button>
 
                         </div>
 
                     </div>
                 <?php else: ?>
                     <div class="col-lg-3 col-sm-3 col-xs-12" style="margin: 20px auto">
-                        <a href="<?= Url::to(['view','id'=>$n->id]); ?>">
+                        <a href="<?= Url::to(['/news/' . $n->id]); ?>">
                             <div class="content__press--left">
 
                                 <img src="<?= $n->images; ?>" class="img_mix" alt="Travel">
