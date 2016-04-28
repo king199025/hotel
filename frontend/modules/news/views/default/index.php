@@ -27,7 +27,9 @@ $this->title = Yii::t('title','TITLE_NEWS');
                             <p><?= $n->title;?></p>
 
                             <a class="content__press--link" href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?> &rarr;</a>
-                            <p class="content__press--date2"><?= date('d-m-Y', $n->dt_add); ?></p>
+                            <!--<p class="content__press--date2"><?/*= date('d-m-Y', $n->dt_add); */?></p>-->
+
+                            <p class="content__press--date2"><?= \common\classes\Helper::showDate($n->dt_add); ?></p>
                         </div>
                     </div>
                 </div>
@@ -40,7 +42,9 @@ $this->title = Yii::t('title','TITLE_NEWS');
 
                             <a href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?> &rarr;</a>
 
-                            <p class="content__press--date"><?= date('d-m-Y', $n->dt_add); ?></p>
+                            <!--<p class="content__press--date"><?/*= date('d-m-Y', $n->dt_add); */?></p>-->
+
+                            <p class="content__press--date2"><?= \common\classes\Helper::showDate($n->dt_add); ?></p>
                         </div>
                     </div>
                 <?php else: ?>
@@ -53,7 +57,8 @@ $this->title = Yii::t('title','TITLE_NEWS');
                             <p><?= $n->title;?></p>
                             <a class="content__press--link" href="<?= Url::to(['view','id'=>$n->id]); ?>"><?= Yii::t('button', 'BUTTON_READ');?> &rarr;</a>
 
-                            <p class="content__press--date3"><?= date('d-m-Y', $n->dt_add); ?></p>
+                            <!--<p class="content__press--date3"><?/*= date('d-m-Y', $n->dt_add); */?></p>-->
+                            <p class="content__press--date2"><?= \common\classes\Helper::showDate($n->dt_add); ?></p>
 
                         </div>
                     </div>

@@ -36,4 +36,26 @@ class Helper
         return Lang::findOne(['local' => \Yii::$app->language])->id;
     }
 
+
+    public static function showDate($date){
+        $day = getdate($date);
+
+        switch($day['mon']){
+            case 1: $mon = 'января';break;
+            case 2: $mon = 'февраля';break;
+            case 3: $mon = 'марта';break;
+            case 4: $mon = 'апреля';break;
+            case 5: $mon = 'мая';break;
+            case 6: $mon = 'июня';break;
+            case 7: $mon = 'июля';break;
+            case 8: $mon = 'августа';break;
+            case 9: $mon = 'сентября';break;
+            case 10: $mon = 'октября';break;
+            case 11: $mon = 'ноября';break;
+            case 12: $mon = 'декабря';break;
+        }
+
+        return $day['mday'] . ' ' . $mon . ' ' . $day['year'] ;
+    }
+
 }
