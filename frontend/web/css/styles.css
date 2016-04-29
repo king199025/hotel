@@ -1095,6 +1095,7 @@ html, body {
 
 .content__press--right h3 {
     font-size: 22px;
+    line-height: 31px;
     font-family: "GothamProRegular";
     font-weight: bold;
     color: white;
@@ -2215,7 +2216,7 @@ html, body {
 
     .content__press--left {
         width: 100%;
-        height: 257px;
+        height: 350px;
         margin-bottom: 10px;
     }
 
@@ -2236,14 +2237,14 @@ html, body {
         display: block;
         position: relative;
         width: 100%;
-        height: 78px;
+        height: 230px;
         overflow: hidden;
     }
 
     .content__press--date3{
         position: absolute;
         z-index: 2;
-        top: 56px;
+        top: 208px;
         left: 11px;
         font-family: "GothamProRegular";
         color: white;
