@@ -12,6 +12,18 @@
 }
 
 @font-face {
+    font-family: 'GothamProBold';
+    src: url("../fonts/Gotham/GothaProBold.otf");
+    src: url("../fonts/Gotham/GothaProBold.eot") format("embedded-opentype"), url("../fonts/Gotham/GothaProBold.woff2") format("woff2"), url("../fonts/Gotham/GothaProBold.woff") format("woff"), url("../fonts/Gotham/GothaProBold.ttf") format("truetype"), url("../fonts/Gotham/GothaProBold.svg") format("svg");
+}
+
+@font-face {
+    font-family: 'GothamProMedium';
+    src: url("../fonts/Gotham/GothaProMed.otf");
+    src: url("../fonts/Gotham/GothaProMed.eot") format("embedded-opentype"), url("../fonts/Gotham/GothaProMed.woff2") format("woff2"), url("../fonts/Gotham/GothaProMed.woff") format("woff"), url("../fonts/Gotham/GothaProMed.ttf") format("truetype"), url("../fonts/Gotham/GothaProMed.svg") format("svg");
+}
+
+@font-face {
     font-family: 'QanelasBlack';
     src: url("../fonts/Qanelas/QanelasBlack.eot");
     src: url("../fonts/Qanelas/QanelasBlack.eot") format("embedded-opentype"), url("../fonts/Qanelas/QanelasBlack.woff2") format("woff2"), url("../fonts/Qanelas/QanelasBlack.woff") format("woff"), url("../fonts/Qanelas/QanelasBlack.ttf") format("truetype"), url("../fonts/Qanelas/QanelasBlack.svg#QanelasBlack") format("svg");
@@ -976,15 +988,15 @@ html, body {
 }
 
 .content__press--left p {
-    font-size: 14px;
+    font-size: 15px;
     font-family: "GothamProRegular";
     font-weight: bold;
     color: #3a3d3f;
-    padding: 30px 30px 0 30px;
+    padding: 8px 30px 0 30px;
 }
 
 .content__press--left p:last-of-type {
-    font-size: 14px;
+    font-size: 10px;
     color: #838c8e;
 }
 
@@ -994,6 +1006,7 @@ html, body {
     width: 100%;
     height: 150px;
     overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .content__press--left__img img {
@@ -1025,22 +1038,21 @@ html, body {
     /*width: 300px;*/
     height: 238px;
     top: 60px;
-    padding-left: 30px;
+    padding-left: 51px;
 }
 
 .content__press--center__text p {
     display: block;
-    width: 319px;
-    font-size: 25px;
-    font-family: "GothamProRegular";
-    font-weight: bold;
+    width: 262px;
+    font-size: 22px;
+    font-family: "GothamProBold";
     color: #3c3d41;
     text-align: left;
     margin-bottom: 100px;
 }
 
 .content__press--center__text p:nth-of-type(2) {
-    font-size: 14px;
+    font-size: 10px;
     font-family: "GothamProRegular";
     font-weight: bold;
     color: #838d8f;
@@ -1051,6 +1063,10 @@ html, body {
     display: block;
     position: relative;
     margin-top: 25px;
+}
+
+.content__press--center__text .content__press--link{
+    left: 22px;
 }
 
 .content__press--center__link p {
@@ -1081,7 +1097,7 @@ html, body {
 }
 
 .content__press--right p {
-    font-size: 14px;
+    font-size: 10px;
     font-family: "GothamProRegular";
     font-weight: bold;
     color: white;
@@ -1090,30 +1106,30 @@ html, body {
 
 .content__press--right p span {
     font-size: 15px;
-    font-family: "GothamProRegular";
+    font-family: "GothamProBold";
     font-weight: bold;
     color: rgba(255, 255, 255, 0.502);
 }
 
 .content__press--right h3 {
     font-size: 22px;
-    line-height: 31px;
-    font-family: "GothamProRegular";
-    font-weight: bold;
+    line-height: 24px;
+    font-family: "GothamProMedium";
+    text-align: left;
     color: white;
-    margin-top: 19px;
+    margin-top: 30px;
 }
 
 .content__press--right a, .content__press--right a:hover, .content__press--right a:focus {
-    font-size: 14px;
+    font-size: 11px;
     font-family: "GothamProRegular";
     font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     position: absolute;
-    bottom: 0px;
-    left: 20px;
+    bottom: 23px;
+    left: 25px;
 }
 
 .content__press--right .footer__send--btn {
@@ -1166,8 +1182,9 @@ html, body {
 .content__press--date {
     position: absolute;
     z-index: 2;
-    top: 0;
-    left: 19px;
+    top: 10px;
+    left: 25px;
+    text-transform: uppercase;
     font-family: "GothamProRegular";
     color: white;
     margin-bottom: 0;
@@ -1176,8 +1193,9 @@ html, body {
 .content__press--date2 {
     position: absolute;
     z-index: 2;
-    left: 423px;
-    bottom: 0;
+    left: 53px;
+    top: -50px;
+    text-transform: uppercase;
     font-family: "GothamProRegular";
     color: black !important;
     margin-bottom: 0px!important;
@@ -1186,15 +1204,17 @@ html, body {
 .content__press--date3 {
     position: absolute;
     z-index: 2;
-    top: 131px;
-    left: 11px;
+    top: 2px;
+    left: 8px;
+    text-transform: uppercase;
+    text-transform: uppercase;
     font-family: "GothamProRegular";
-    color: white;
+    color: white!important;
     margin-bottom: 0;
 }
 
 .content__press--link, .content__press .content__press--link:hover, .content__press .content__press--link:focus {
-    font-size: 14px;
+    font-size: 10px;
     font-family: "GothamProRegular";
     font-weight: bold;
     color: #191919;
@@ -1836,12 +1856,12 @@ html, body {
     }
 
     .content__press--date3 {
-        top: 89px;
-        left: 11px;
+        top: -22px;
+        left: 10px;
     }
 
     .content__press--left p:last-of-type {
-        font-size: 14px;
+        font-size: 10px;
         color: #838c8e;
     }
 
@@ -1875,7 +1895,7 @@ html, body {
     }
 
     .content__press--center__text p:nth-of-type(2) {
-        font-size: 16px;
+        font-size: 10px;
         font-family: "QanelasLight";
         font-weight: bold;
         color: #838d8f;
@@ -1915,7 +1935,7 @@ html, body {
     }
 
     .content__press--right p {
-        font-size: 15px;
+        font-size: 10px;
         font-family: "QanelasLight";
         font-weight: bold;
         color: white;
@@ -1940,7 +1960,7 @@ html, body {
     }
 
     .content__press--date2 {
-        left: 350px;
+        left: 50px;
         bottom: 0;
     }
 
@@ -2286,7 +2306,7 @@ html, body {
 
     .content__press--left {
         width: 100%;
-        height: 350px;
+        height: 257px;
         margin-bottom: 10px;
     }
 
@@ -2307,14 +2327,14 @@ html, body {
         display: block;
         position: relative;
         width: 100%;
-        height: 230px;
+        height: 92px;
         overflow: hidden;
     }
 
     .content__press--date3{
         position: absolute;
         z-index: 2;
-        top: 208px;
+        top: -24px;
         left: 11px;
         font-family: "GothamProRegular";
         color: white;
@@ -2352,7 +2372,7 @@ html, body {
     }
 
     .content__press--center__text p:nth-of-type(2) {
-        font-size: 11px;
+        font-size: 10px;
         font-family: "QanelasLight";
         font-weight: bold;
         color: #838d8f;
@@ -2387,8 +2407,17 @@ html, body {
         margin-bottom: 10px;
     }
 
+    .content__press--date {
+        top: 7px;
+        left: 25px;
+    }
+
+    .content__press--right h3 {
+        line-height: 20px;
+    }
+
     .content__press--right p {
-        font-size: 15px;
+        font-size: 10px;
         font-family: "QanelasLight";
         font-weight: bold;
         color: white;
@@ -2409,8 +2438,8 @@ html, body {
     }
 
     .content__press--date2 {
-        left: 267px;
-        bottom: 4px;
+        left: 51px;
+        top: -26px;
     }
 
     .content__press--right .footer__send--btn {
@@ -2663,7 +2692,7 @@ html, body {
     }
 
     .content__press--date3 {
-        top: 129px;
+        top: -14px;
         left: 11px;
     }
     .content__about--text__dimensions {
@@ -2687,7 +2716,7 @@ html, body {
     }
 
     .content__press--date3 {
-        top: 129px;
+        top: -14px;
         left: 11px;
     }
 

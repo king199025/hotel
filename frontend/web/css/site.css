@@ -167,8 +167,10 @@ a.desc:after {
      color: white;
  }
 .content__press--center__category p{
-    font-size: 14px;
+    font-size: 8px;
+    text-transform: uppercase;
     margin-bottom: 0px;
+    padding: 5px;
 }
 .content__press--left__category{
     display: block;
@@ -178,12 +180,11 @@ a.desc:after {
     top: 15px;
     background-color: #6741dc;
     border-radius: 5px;
-
-
 }
 .content__press--left__category p{
     color: white!important;
+    text-transform: uppercase;
     margin-bottom: 0px;
-    font-size: 14px;
-    padding: 0px!important;
+    font-size: 8px!important;
+    padding: 5px!important;
 }
