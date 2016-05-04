@@ -167,7 +167,7 @@ a.desc:after {
      color: white;
  }
 .content__press--center__category p{
-    font-size: 8px;
+    font-size: 10px;
     text-transform: uppercase;
     margin-bottom: 0px;
     padding: 5px;
@@ -185,6 +185,5 @@ a.desc:after {
     color: white!important;
     text-transform: uppercase;
     margin-bottom: 0px;
-    font-size: 8px!important;
     padding: 5px!important;
 }
