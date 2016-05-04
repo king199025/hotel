@@ -77,12 +77,12 @@
                                    aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_M_C_T'); ?></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">О проекте</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="mercury_city_tower.html">Структура</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="mercury_city_tower.html">Технические
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Структура</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Технические
                                             характеристики</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="mercury_city_tower.html">Архитекторы</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="mercury_city_tower.html">Участники</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="mercury_city_tower.html">Управляющая компания</a>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Архитекторы</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Участники</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Управляющая компания</a>
                                     </li>
                                 </ul>
                             </li>

@@ -16,6 +16,9 @@ use yii\helpers\Url;
             <?php if($i == 2): ?>
                 <div class="col-lg-6 col-sm-6 col-xs-12" style="margin: 20px auto">
                     <div class="content__press--center">
+                        <div class="content__press--center__category">
+                            <p><?= $cat ?></p>
+                        </div>
                         <img class="content__press--center__img img_mix" src="<?= $n->images; ?>" alt=""/>
                         <div class="content__press--center__text">
                             <p><?= $n->title;?></p>
@@ -55,8 +58,12 @@ use yii\helpers\Url;
                         <a href="<?= Url::to(['/news/' . $n->id]); ?>">
                             <div class="content__press--left">
 
+                                <div class="content__press--left__img">
+                                <div class="content__press--left__category">
+                                    <p><?= $cat ?></p>
+                                </div>
                                 <img src="<?= $n->images; ?>" class="img_mix" alt="Travel">
-
+                                </div>
                                 <p><?= $n->title;?></p>
 
                                 <!--<p>With its gaping mouth, needle-sharp teeth</p>-->

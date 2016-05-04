@@ -156,3 +156,34 @@ a.desc:after {
 .floor-active span {
     display: block;
 }
+.content__press--center__category{
+     display: block;
+     position: absolute;
+     z-index: 3;
+     left: 15px;
+     top: 15px;
+     background-color: #d8a252;
+     border-radius: 5px;
+     color: white;
+ }
+.content__press--center__category p{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.content__press--left__category{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    left: 15px;
+    top: 15px;
+    background-color: #6741dc;
+    border-radius: 5px;
+
+
+}
+.content__press--left__category p{
+    color: white!important;
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding: 0px!important;
+}
