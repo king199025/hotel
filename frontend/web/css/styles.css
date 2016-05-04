@@ -682,6 +682,7 @@ html, body {
     width: 50%;
     float: left;
     text-align: left;
+    padding-left: 350px;
 }
 
 .content__about--text__area {
@@ -691,6 +692,7 @@ html, body {
     float: left;
     text-align: right;
     margin-top: 20px;
+    padding-right: 350px;
 }
 
 .content__about--text__architect {
@@ -1389,6 +1391,74 @@ html, body {
 }
 
 /*----Content end----*/
+@media only screen and (max-width: 1440px){
+    .content__photo--tower__name h3 {
+        font-size: 53px;
+        font-family: "GothamProRegular";
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        position: absolute;
+        margin-top: 0px;
+    }
+    .content__photo--tower__name p {
+        font-size: 18px;
+        font-family: "GothamProRegular";
+        color: white;
+        text-transform: uppercase;
+        line-height: 1.715;
+        position: absolute;
+        top: 129px;
+    }
+}
+
+@media only screen and (max-width: 1390px){
+    .content__photo--tower__name h3 {
+        font-size: 53px;
+        font-family: "GothamProRegular";
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        position: absolute;
+        margin-top: 0px;
+    }
+    .content__photo--tower__name p {
+        font-size: 18px;
+        font-family: "GothamProRegular";
+        color: white;
+        text-transform: uppercase;
+        line-height: 1.715;
+        position: absolute;
+        top: 129px;
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    .content__photo--tower__name h3 {
+        font-size: 53px;
+        font-family: "GothamProRegular";
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        position: absolute;
+        margin-top: 0px;
+    }
+    .content__photo--tower__name p {
+        font-size: 18px;
+        font-family: "GothamProRegular";
+        color: white;
+        text-transform: uppercase;
+        line-height: 1.715;
+        position: absolute;
+        top: 129px;
+    }
+}
 @media only screen and (max-width: 1025px) {
     .header__container-right--menu {
         display: block;
@@ -2408,6 +2478,12 @@ html, body {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .content__about--text__dimensions {
+        padding-left: 0px;
+    }
+    .content__about--text__area {
+        padding-right: 0px;
+    }
 }
 
 @media only screen and (max-width: 670px){
@@ -2423,6 +2499,12 @@ html, body {
     .content__press--date3 {
         top: 131px;
         left: 11px;
+    }
+    .content__about--text__dimensions {
+        padding-left: 0px;
+    }
+    .content__about--text__area {
+        padding-right: 0px;
     }
 }
 
@@ -2494,6 +2576,12 @@ html, body {
         z-index: 10;
         display: none;
     }
+    .content__about--text__dimensions {
+        padding-left: 0px;
+    }
+    .content__about--text__area {
+        padding-right: 0px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -2551,7 +2639,15 @@ html, body {
         z-index: 10;
         display: none;
     }
-}@media only screen and (max-width: 420px) {
+    .content__about--text__dimensions {
+        padding-left: 0px;
+    }
+    .content__about--text__area {
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
     .content__press--right .footer__send--btn {
         position: absolute;
         bottom: 15px;
@@ -2569,6 +2665,12 @@ html, body {
     .content__press--date3 {
         top: 129px;
         left: 11px;
+    }
+    .content__about--text__dimensions {
+        padding-left: 0px;
+    }
+    .content__about--text__area {
+        padding-right: 0px;
     }
 }
 
@@ -2593,9 +2695,15 @@ html, body {
         left: 180px;
         bottom: 4px;
     }
+    .content__about--text__dimensions {
+        padding-left: 0px;
+    }
+    .content__about--text__area {
+        padding-right: 0px;
+    }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 330px) {
     .navbar .nav li {
         display: inline-block;
         float: none;
@@ -2673,6 +2781,13 @@ html, body {
         text-align: center;
         margin: 0px auto;
         padding-top: 5px;
+    }
+
+    .content__about--text__dimensions {
+        padding-left: 0px;
+    }
+    .content__about--text__area {
+        padding-right: 0px;
     }
 
     .content__charac {
