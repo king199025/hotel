@@ -542,15 +542,15 @@ html, body {
     border-left: 50px solid transparent;
     border-right: 0px solid transparent;
     margin-left: 100px;
-    margin-top: 200px;
+    margin-top: 304px;
     z-index: 2;
 }
 
 .content__photo--tower__name h3 {
     font-size: 55px;
-    font-family: "GothamProRegular";
+    font-family: "GothamProBold";
+    text-align: left;
     color: white;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -676,7 +676,7 @@ html, body {
 
 .content__about--text h3 {
     font-size: 32px;
-    font-family: "MyriadProRegular";
+    font-family: "GothamProBold";
     color: #4a4a4a;
     text-transform: uppercase;
 }
@@ -694,12 +694,13 @@ html, body {
     width: 50%;
     float: left;
     text-align: left;
-    padding-left: 350px;
+    padding-left: 235px;
 }
 
 .content__about--text__area {
     display: block;
     position: relative;
+    font-weight: bold;
     width: 50%;
     float: left;
     text-align: right;
@@ -981,7 +982,7 @@ html, body {
     display: block;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 325px;
     overflow: hidden;
     float: left;
     padding: 0 10px 0 10px;
@@ -992,7 +993,7 @@ html, body {
     font-family: "GothamProRegular";
     font-weight: bold;
     color: #3a3d3f;
-    padding: 8px 30px 0 30px;
+    padding: 30px 30px 0 30px;
 }
 
 .content__press--left p:last-of-type {
@@ -1021,7 +1022,7 @@ html, body {
     display: block;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 325px;
     overflow: hidden;
     float: left;
     background-color: #f2f2f2;
@@ -1089,7 +1090,7 @@ html, body {
     display: block;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 325px;
     background-color: #a5925f;
     border-radius: 5px;
     padding: 20px;
@@ -1182,7 +1183,7 @@ html, body {
 .content__press--date {
     position: absolute;
     z-index: 2;
-    top: 10px;
+    top: 21px;
     left: 25px;
     text-transform: uppercase;
     font-family: "GothamProRegular";
@@ -1194,7 +1195,7 @@ html, body {
     position: absolute;
     z-index: 2;
     left: 53px;
-    top: -50px;
+    top: -38px;
     text-transform: uppercase;
     font-family: "GothamProRegular";
     color: black !important;
@@ -1204,12 +1205,12 @@ html, body {
 .content__press--date3 {
     position: absolute;
     z-index: 2;
-    top: 2px;
+    top: 132px;
     left: 8px;
     text-transform: uppercase;
     text-transform: uppercase;
     font-family: "GothamProRegular";
-    color: white!important;
+    color: white;
     margin-bottom: 0;
 }
 
@@ -1414,7 +1415,7 @@ html, body {
 @media only screen and (max-width: 1440px){
     .content__photo--tower__name h3 {
         font-size: 53px;
-        font-family: "GothamProRegular";
+        font-family: "GothamProBold";
         color: white;
         font-weight: bold;
         text-transform: uppercase;
@@ -1424,7 +1425,7 @@ html, body {
         margin-top: 0px;
     }
     .content__photo--tower__name p {
-        font-size: 18px;
+        font-size: 14px;
         font-family: "GothamProRegular";
         color: white;
         text-transform: uppercase;
@@ -1437,9 +1438,8 @@ html, body {
 @media only screen and (max-width: 1390px){
     .content__photo--tower__name h3 {
         font-size: 53px;
-        font-family: "GothamProRegular";
+        font-family: "GothamProBold";
         color: white;
-        font-weight: bold;
         text-transform: uppercase;
         display: block;
         width: 100%;
@@ -1447,7 +1447,7 @@ html, body {
         margin-top: 0px;
     }
     .content__photo--tower__name p {
-        font-size: 18px;
+        font-size: 14px;
         font-family: "GothamProRegular";
         color: white;
         text-transform: uppercase;
@@ -1459,10 +1459,10 @@ html, body {
 
 @media only screen and (max-width: 1366px){
     .content__photo--tower__name h3 {
-        font-size: 53px;
-        font-family: "GothamProRegular";
+        font-size: 54px;
+        font-family: "GothamProBold";
         color: white;
-        font-weight: bold;
+        text-align: left;
         text-transform: uppercase;
         display: block;
         width: 100%;
@@ -1470,7 +1470,7 @@ html, body {
         margin-top: 0px;
     }
     .content__photo--tower__name p {
-        font-size: 18px;
+        font-size: 14px;
         font-family: "GothamProRegular";
         color: white;
         text-transform: uppercase;
@@ -1844,6 +1844,7 @@ html, body {
         display: block;
         position: relative;
         width: 100%;
+        height: 325px;
         float: left;
     }
 
@@ -1856,7 +1857,7 @@ html, body {
     }
 
     .content__press--date3 {
-        top: -22px;
+        top: 89px;
         left: 10px;
     }
 
@@ -1869,7 +1870,7 @@ html, body {
         display: block;
         position: relative;
         width: 100%;
-        height: 300px;
+        height: 325px;
         overflow: hidden;
         float: left;
         background-color: #f2f2f2;
@@ -1928,7 +1929,7 @@ html, body {
         display: block;
         position: relative;
         width: 100%;
-        height: 300px;
+        height: 325px;
         background-color: #a5925f;
         border-radius: 5px;
         padding: 20px;
@@ -2334,7 +2335,7 @@ html, body {
     .content__press--date3{
         position: absolute;
         z-index: 2;
-        top: -24px;
+        top: 70px;
         left: 11px;
         font-family: "GothamProRegular";
         color: white;
@@ -2714,15 +2715,13 @@ html, body {
         width: 100%;
         height: 150px;
     }
-
-    .content__press--date3 {
-        top: -14px;
-        left: 11px;
-    }
-
     .content__press--date2 {
         left: 180px;
         bottom: 4px;
+    }
+    .content__press--date3 {
+        top: 129px;
+        left: 11px;
     }
     .content__about--text__dimensions {
         padding-left: 0px;
@@ -2889,6 +2888,11 @@ html, body {
     .content__press--date2 {
         left: 180px;
         bottom: 4px;
+    }
+
+    .content__press--date3 {
+        top: 129px;
+        left: 11px;
     }
 
     .content__press--main__short .description a {
