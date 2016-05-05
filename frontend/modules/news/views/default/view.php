@@ -1,5 +1,5 @@
 <?php
-/* @var $news*/
+/* @var $news */
 
 $this->title = $news->title;
 
@@ -11,12 +11,13 @@ $this->title = $news->title;
         <div class="row">
             <div class="content__press">
                 <h3 class="section--title"><span>Новости</span></h3>
+
                 <div class="col-lg-8 col-sm-8 col-xs-12">
                     <div class="row">
                         <div class="content__press--main">
                             <div class="content__press--main__img">
-                                <?php if(!empty($news->images)): ?>
-                                    <img src="<?= $news->images;?>" alt=""/>
+                                <?php if (!empty($news->images)): ?>
+                                    <img src="<?= $news->images; ?>" alt=""/>
                                 <?php endif; ?>
                                 <p class="content__press--main__date"><?= date('d-m-Y'); ?></p>
 
@@ -34,22 +35,33 @@ $this->title = $news->title;
                             </div>
                             <div class="content__press--main__social">
                                 <a href="#">
-                                    <i class="fa fa-facebook-official">SHARE</i>
+                                    <i class="fa fa-facebook-official"></i>
+                                    <span>Like</span>
+                                </a>
+                                <span class="counter">348</span>
+                            </div>
+
+
+                            <div class="content__press--main__social">
+                                <a href="#">
+                                    <i class="fa fa-facebook-official">
+                                        <span>SHARE</span></i>
                                 </a>
                             </div>
                             <div class="content__press--main__social">
-                                <a href="#" onclick="window.open('http://vkontakte.ru/share.php?url='+encodeURIComponent(location.href));return false;" rel="nofollow" style="text-decoration:none;" title="Поделиться ВКонтакте">
-                                    <i class="fa fa-vk">SHARE</i>
+                                <a href="#"
+                                   onclick="window.open('http://vkontakte.ru/share.php?url='+encodeURIComponent(location.href));return false;"
+                                   rel="nofollow" style="text-decoration:none;" title="Поделиться ВКонтакте">
+                                    <i class="fa fa-vk"><span>SHARE</span></i>
                                 </a>
                             </div>
                             <div class="content__press--main__social">
                                 <a href="#">
-                                    <i class="fa fa-twitter">SHARE</i>
+                                    <i class="fa fa-twitter"><span>SHARE</span></i>
                                 </a>
                             </div>
 
                             <?= \frontend\modules\news\widget\ReadMore::widget(['newsId' => $news->id]); ?>
-
 
 
                         </div>

@@ -24,7 +24,7 @@ use yii\helpers\Url;
                         <img class="content__press--center__img img_mix" src="<?= $n->images; ?>" alt=""/>
                         <div class="content__press--center__text">
                             <p class="content__press--center__title"><?= $n->title;?></p>
-                            <p class="content__press--center__subtitle"><?= substr(strip_tags($n->text),0,70); ?></p>
+                            <p class="content__press--center__subtitle"><?= mb_substr(strip_tags($n->text),0,70,'UTF-8'); ?></p>
                             <!--<p>Peter Dinklage’s porn ‘tache, Jennifer Lawrence’s brilliance and more. Some (tiny)-->
                             <!--spoilers ahead</p>-->
 
@@ -45,7 +45,7 @@ use yii\helpers\Url;
                             <p><?= $cat ?></p>
 
                             <h3 class="content__press--right__title"><?= $n->title;?></h3>
-                            <p class="content__press--right__subtitle"><?= substr(strip_tags($n->text),0,70); ?></p>
+                            <p class="content__press--right__subtitle"><?= mb_substr(strip_tags($n->text),0,70,'UTF-8'); ?></p>
                             <!--<p><span>Light a bonfire in the garden, and step bravely into your best-dressed decade</span>
                             </p>-->
 
@@ -67,7 +67,7 @@ use yii\helpers\Url;
                                 <img src="<?= $n->images; ?>" class="img_mix" alt="Travel">
                                 </div>
                                 <p class="content__press--left__title"><?= $n->title;?></p>
-                                <p class="content__press--left__subtitle"><?= substr(strip_tags($n->text),0,70); ?></p>
+                                <p class="content__press--left__subtitle"><?= mb_substr(strip_tags($n->text),0,70,'UTF-8'); ?></p>
                                 <!--<p>With its gaping mouth, needle-sharp teeth</p>-->
 
                             </div>

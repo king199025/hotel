@@ -219,8 +219,47 @@ a.desc:after {
 }
 .content__press--right__title{
     text-align: center!important;
+    margin-top: 0px!important;
 }
-.content__press--right__subtitle{
-    font-size: 14px!important;
-    text-align: center!important;
+.content__press--right__subtitle {
+    font-size: 14px !important;
+    text-align: center !important;
+}
+.content__press--main__social span.counter {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 25px;
+    font-size: 15px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    margin: 5px 5px 5px 29px;
+}
+.content__press--main__social {
+    display: block;
+    position: relative;
+    width: 20%;
+    float: left;
+    margin-top: 10px;
+    /*background-color: #8199ca;*/
+    border-radius: 2px;
+    margin-right: 2%;
+    margin-left: 3%;
+}
+.content__press--main__social a span {
+    font-size: 13px;
+    font-family: "GothamProBold";
+    vertical-align: 31%;
+}
+.content__press--main__social:nth-of-type(3) a span {
+    font-size: 13px;
+    vertical-align: 31%;
+}
+.content__press--main__social:nth-of-type(4) a span {
+    font-size: 13px;
+    vertical-align: 31%;
+}
+.content__press--main__social:nth-of-type(5) a span {
+    font-size: 13px;
+    vertical-align: 31%;
 }
