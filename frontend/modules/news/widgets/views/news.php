@@ -1,5 +1,7 @@
 <?php
 /* @var $news*/
+use common\classes\Debug;
+use yii\helpers\Html;
 use yii\helpers\Url;
 
 ?>
@@ -10,7 +12,7 @@ use yii\helpers\Url;
 
 
             <h3 class="section--title"><span>ПРЕСС ЦЕНТР</span></h3>
-
+<?//= Debug::prn($news); ?>
         <?php $i=1; foreach($news as $n):?>
 <?php $cat = \common\models\db\CategoryNews::find()->where(['id'=>$n->cat_id])->one()->title; ?>
             <?php if($i == 2): ?>
@@ -22,7 +24,7 @@ use yii\helpers\Url;
                         <img class="content__press--center__img img_mix" src="<?= $n->images; ?>" alt=""/>
                         <div class="content__press--center__text">
                             <p><?= $n->title;?></p>
-
+                            <p><?= substr(strip_tags($n->text),0,70); ?></p>
                             <!--<p>Peter Dinklage’s porn ‘tache, Jennifer Lawrence’s brilliance and more. Some (tiny)-->
                             <!--spoilers ahead</p>-->
 
@@ -43,7 +45,7 @@ use yii\helpers\Url;
                             <p><?= $cat ?></p>
 
                             <h3><?= $n->title;?></h3>
-
+                            <p><?= substr(strip_tags($n->text),0,70); ?></p>
                             <!--<p><span>Light a bonfire in the garden, and step bravely into your best-dressed decade</span>
                             </p>-->
 
@@ -65,7 +67,7 @@ use yii\helpers\Url;
                                 <img src="<?= $n->images; ?>" class="img_mix" alt="Travel">
                                 </div>
                                 <p><?= $n->title;?></p>
-
+                                <p><?= substr(strip_tags($n->text),0,70); ?></p>
                                 <!--<p>With its gaping mouth, needle-sharp teeth</p>-->
 
                             </div>
