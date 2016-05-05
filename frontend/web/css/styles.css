@@ -998,7 +998,7 @@ html, body {
 }
 
 .content__press--left p {
-    font-size: 14px!important;
+    font-size: 14px;
     font-family: "GothamProRegular";
     font-weight: bold;
     color: #3a3d3f;
