@@ -186,6 +186,84 @@ class SiteController extends Controller
         return $this->render('retail',['tenants' => $tenants]);
     }
 
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionInfrastructure()
+    {
+
+        return $this->render('mercury-city-tower/infrastructure');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionMembers()
+    {
+
+        return $this->render('mercury-city-tower/members');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionOfficestech()
+    {
+
+        return $this->render('offices/tech');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionPlanning()
+    {
+
+        return $this->render('offices/planning');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionPlan()
+    {
+
+        return $this->render('apartments/planning');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionFinishing()
+    {
+
+        return $this->render('apartments/finishing');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionExcursion()
+    {
+
+        return $this->render('apartments/excursion');
+    }
+
     /**
      * Displays about page.
      *

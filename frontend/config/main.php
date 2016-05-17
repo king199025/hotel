@@ -68,7 +68,20 @@ return [
                 'ms' => 'ms/default',
                 'contacts' => 'contacts/default',
                 //'mercury_city_tower' => 'mercury_city_tower/default',
+
+
+
                 'mercury_city_tower' => '/site/mercury_city_tower',
+                'infrastructure' => '/site/infrastructure',
+                'members' => '/site/members',
+                'officestech' => '/site/officestech',
+                'planning' => '/site/planning',
+                'plan' => '/site/plan',
+                'plans' => '/site/plans',
+                'finishing' => '/site/finishing',
+                'excursion' => '/site/excursion',
+
+
                 'offices' => '/site/offices',
                 'apartments' => '/site/apartments',
                 'retail' => '/site/retail'

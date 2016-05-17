@@ -76,13 +76,13 @@
                                    data-toggle="dropdown" role="button"
                                    aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_M_C_T'); ?></a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">О проекте</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Структура</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Технические
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower#oproekte']);?>">О проекте</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/infrastructure']);?>">Структура</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower#tex']);?>">Технические
                                             характеристики</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Архитекторы</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Участники</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower']);?>">Управляющая компания</a>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/mercury_city_tower#arh']);?>">Архитекторы</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/members']);?>">Участники</a></li>
+                                    <!--<li class="dropdown__link"><a class="nav__link" href="<?/*= Url::to(['/site/mercury_city_tower']);*/?>">Управляющая компания</a>-->
                                     </li>
                                 </ul>
                             </li>
@@ -91,14 +91,14 @@
                                 <a href="#" class="dropdown-toggle nav__link" data-toggle="dropdown" role="button"
                                    aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_OFFICES'); ?></a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/offices']);?>">Технические
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/officestech']);?>">Технические
                                             характеристики</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="offices.html">Планировки</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="offices.html">Варианты планировки</a>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/planning']);?>">Планировки </a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/plans']);?>">Варианты планировки plans</a>
                                     </li>
-                                    <li class="dropdown__link"><a class="nav__link" href="offices.html">3-d экскурсия по этажу</a>
+                                   <!-- <li class="dropdown__link"><a class="nav__link" href="offices.html">3-d экскурсия по этажу</a>
                                     </li>
-                                    <li class="dropdown__link"><a class="nav__link" href="offices.html">Выбрать вид</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="offices.html">Выбрать вид</a></li>-->
                                     <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/tenants']);?>">Арендаторы</a></li>
                                 </ul>
                             </li>
@@ -107,13 +107,13 @@
                                    role="button"
                                    aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_APARTMENTS'); ?></a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/apartments']);?>">Планировки</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="apartments.html">Отделка</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="#">3-d экскурсия по
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/plan']);?>">Планировки</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/finishing']);?>">Отделка</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/excursion']);?>">3-d экскурсия по
                                             апартаментам</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="#">Выбрать вид </a></li>
+                                    <!--<li class="dropdown__link"><a class="nav__link" href="#">Выбрать вид </a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="apartments.html">Консьерж-сервис</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="#">Обратная связь</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="#">Обратная связь</a></li>-->
                                 </ul>
                             </li>
                             <li>

@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-xs-12">
                 <div class="row">
-                    <div class="content__about--text">
+                    <div class="content__about--text" id="oproekte">
 
                         <h3>ЗОЛОТАЯ БАШНЯ МОСКВЫ</h3>
 
@@ -90,7 +90,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="content__about--header">
+            <div class="content__about--header" id="arh">
                 <h3>АРХИТЕКТОРЫ</h3>
             </div>
                 <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -139,7 +139,7 @@
     </div>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="tex">
         <div class="row">
             <div class="content__charac">
 
