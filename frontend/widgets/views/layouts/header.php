@@ -149,7 +149,7 @@
                                     <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/contacts']) ?>">Контакты</a></li>
                                 </ul>
                             </li>
-                            <li><a class="nav__link" href="#"><?= Yii::t('menu', 'HEADER_MENU_GALLERY'); ?></a></li>
+                            <li><a class="nav__link" href="<?= Url::to(['/galleries']) ?>"><?= Yii::t('menu', 'HEADER_MENU_GALLERY'); ?></a></li>
                             <li><a class="nav__link" href="<?= Url::to(['/contacts']) ?>"><?= Yii::t('menu', 'HEADER_MENU_CONTACTS'); ?></a></li>
                         </ul>
 

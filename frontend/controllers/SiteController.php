@@ -283,7 +283,8 @@ class SiteController extends Controller
     {
         return $this->render('retail/planirovkariteil');
     }
-/**
+
+    /**
      * Displays about page.
      *
      * @return mixed
@@ -291,6 +292,16 @@ class SiteController extends Controller
     public function actionExcursionretail()
     {
         return $this->render('retail/excursion');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionGalleries()
+    {
+        return $this->render('galleries');
     }
 
     /**

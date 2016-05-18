@@ -82,6 +82,7 @@ return [
                 'excursion' => '/site/excursion',
                 'planirovkariteil' => '/site/planirovkariteil',
                 'excursionretail' => '/site/excursionretail',
+                'galleries' => '/site/galleries',
 
 
                 'offices' => '/site/offices',
