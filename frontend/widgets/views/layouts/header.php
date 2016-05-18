@@ -120,13 +120,14 @@
                                 <a href="#" class="dropdown-toggle nav__link" data-toggle="dropdown" role="button"
                                    aria-haspopup="true" aria-expanded="false"><?= Yii::t('menu', 'HEADER_MENU_RETAIL'); ?></a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/retail']);?>">Планировки</a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="#">3-d экскурсия по этажу</a>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/retail']);?>"><?= Yii::t('menu', 'HEADER_MENU_RETAIL'); ?></a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/planirovkariteil']);?>">Планировки</a></li>
+                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/excursionretail']);?>">3-d экскурсия по этажу</a>
                                     </li>
-                                    <li class="dropdown__link"><a class="nav__link" href="retail.html">Преимущества</a></li>
+                                   <!-- <li class="dropdown__link"><a class="nav__link" href="retail.html">Преимущества</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="renters.html">Арендаторы</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="#">Обратная связь по
-                                            ритейлу</a></li>
+                                            ритейлу</a></li>-->
                                 </ul>
                             </li>
                             <li>

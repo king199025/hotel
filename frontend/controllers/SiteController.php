@@ -275,6 +275,25 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionPlanirovkariteil()
+    {
+        return $this->render('retail/planirovkariteil');
+    }
+/**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionExcursionretail()
+    {
+        return $this->render('retail/excursion');
+    }
+
+    /**
      * Signs user up.
      *
      * @return mixed

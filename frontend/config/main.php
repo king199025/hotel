@@ -80,6 +80,8 @@ return [
                 'plans' => '/site/plans',
                 'finishing' => '/site/finishing',
                 'excursion' => '/site/excursion',
+                'planirovkariteil' => '/site/planirovkariteil',
+                'excursionretail' => '/site/excursionretail',
 
 
                 'offices' => '/site/offices',
