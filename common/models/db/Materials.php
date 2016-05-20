@@ -21,6 +21,7 @@ use yii\db\ActiveRecord;
  */
 class Materials extends \yii\db\ActiveRecord
 {
+
     public function behaviors()
     {
         return [
@@ -31,6 +32,12 @@ class Materials extends \yii\db\ActiveRecord
                     ActiveRecord::EVENT_BEFORE_UPDATE => ['dt_update'],
                 ],
             ],
+            'slug' => [
+                'class' => 'common\behaviors\Slug',
+                'in_attribute' => 'title',
+                'out_attribute' => 'slug',
+                'translit' => true
+            ]
         ];
     }
     /**
