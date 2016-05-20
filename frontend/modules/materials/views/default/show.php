@@ -1,6 +1,6 @@
 <?php
 /**
- * @var $model object Materials
+ * @var $model object common\models\db\Materials
  */
 ?>
 
@@ -12,12 +12,12 @@
                 <div class="row">
                     <div id="content__photo--tower" class="content__photo--tower">
 
-                        <img src="/img/mercury_tower.png" alt=""/>
+                        <img src="<?= $model->photo ?>" alt=""/>
 
                         <div class="content__photo--tower__name">
-                            <h3>mercury city tower</h3>
+                            <h3><?= $model->title ?></h3>
 
-                            <p>Общая площадь здания: 173 960 м2</p>
+                            <p><?= $model->short_description ?></p>
                         </div>
                     </div>
 

@@ -2,6 +2,8 @@
 
 namespace frontend\modules\materials;
 
+use yii\helpers\Url;
+
 class Materials extends \yii\base\Module
 {
     public $controllerNamespace = 'frontend\modules\materials\controllers';
