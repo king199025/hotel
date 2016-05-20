@@ -94,8 +94,8 @@
                                     <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/officestech']);?>">Технические
                                             характеристики</a></li>
                                     <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/planning']);?>">Планировки </a></li>
-                                    <li class="dropdown__link"><a class="nav__link" href="<?= Url::to(['/site/plans']);?>">Варианты планировки plans</a>
-                                    </li>
+                                    <!--<li class="dropdown__link"><a class="nav__link" href="<?/*= Url::to(['/site/plans']);*/?>">Варианты планировки plans</a>
+                                    </li>-->
                                    <!-- <li class="dropdown__link"><a class="nav__link" href="offices.html">3-d экскурсия по этажу</a>
                                     </li>
                                     <li class="dropdown__link"><a class="nav__link" href="offices.html">Выбрать вид</a></li>-->
