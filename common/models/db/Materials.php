@@ -16,6 +16,8 @@ use yii\db\ActiveRecord;
  * @property string $type
  * @property string $photo
  * @property integer $status
+ * @property string $short_description
+ * @property string $slug
  */
 class Materials extends \yii\db\ActiveRecord
 {
@@ -48,7 +50,7 @@ class Materials extends \yii\db\ActiveRecord
             [['title'], 'required'],
             [['content'], 'string'],
             [['dt_add', 'dt_update', 'status'], 'integer'],
-            [['title', 'type', 'photo'], 'string', 'max' => 255]
+            [['title', 'type', 'photo', 'short_description', 'slug'], 'string', 'max' => 255]
         ];
     }
 
@@ -66,6 +68,7 @@ class Materials extends \yii\db\ActiveRecord
             'type' => 'Тип',
             'status' => 'Статус',
             'photo' => 'Изображение',
+            'short_description' => 'Краткое описание',
         ];
     }
 }

@@ -37,6 +37,14 @@ use yii\widgets\ActiveForm;
         ?>
     </div>
     <br>
+
+    <?php echo $form->field($model, 'short_description')->widget(CKEditor::className(),[
+        'editorOptions' => ElFinder::ckeditorOptions('elfinder', [
+            'preset' => 'full',
+            'inline' => false,
+            'path' => 'frontend/web/media/upload',
+        ]),
+    ]);?>
     <?/*= $form->field($model, 'content')->textarea(['rows' => 6]) */?>
     <?php echo $form->field($model, 'content')->widget(CKEditor::className(),[
         'editorOptions' => ElFinder::ckeditorOptions('elfinder', [
