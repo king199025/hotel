@@ -111,6 +111,9 @@ return [
         'mercury_city_tower' => [
             'class' => 'frontend\modules\mercury_city_tower\mercury_city_tower',
         ],
+        'materials' => [
+            'class' => 'frontend\modules\materials\Materials',
+        ],
     ],
     'params' => $params,
 ];
