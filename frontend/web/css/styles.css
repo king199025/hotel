@@ -310,12 +310,14 @@ header {
 
 .footer__send--head {
     font-size: 25px;
-    font-family: "GothamProRegular";
+    font-family: "GothamProBold";
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.114;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
 }
 
 .footer__send--form {
@@ -343,8 +345,8 @@ header {
     height: 37px;
     background-color: #a5925f;
     border: 2px solid #424242;
-    font-size: 15px;
-    font-family: "GothamProRegular";
+    font-size: 12px;
+    font-family: "GothamProBold";
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -363,6 +365,12 @@ header {
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
+}
+
+.footer__send--subtitle{
+    color: white!important;
+    margin-bottom: 34px;
+    margin-top: 27px;
 }
 
 .footer__send--menu {
@@ -401,16 +409,12 @@ header {
     -o-transition: 0.4s;
 }
 
-/* ╨б╤В╨╕╨╗╨╕ ╨┐╤А╨╕╨▓╤П╨╖╤Л╨▓╨░╨╡╨╝ ╨║ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╤Г ╤Б id='Go_Top' */
+
 #Go_Top {
     position: fixed;
-    /* ╨Я╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╨║╨╜╨╛╨┐╨║╨╕ */
     bottom: 60px;
-    /* ╨а╨░╤Б╤Б╤В╨╛╤П╨╜╨╕╨╡ ╤Б╨╜╨╕╨╖╤Г */
     right: 30px;
-    /* ╨а╨░╤Б╤Б╤В╨╛╤П╨╜╨╕╨╡ ╤Б╨┐╤А╨░╨▓╨░ */
     cursor: pointer;
-    /* ╨Ы╤Г╤З╤И╨╡ ╨╜╨╡ ╤В╤А╨╛╨│╨░╤В╤М */
     z-index: 10;
     display: none;
 }
@@ -1123,7 +1127,7 @@ html, body {
 
 .content__press--right h3 {
     font-size: 22px;
-    line-height: 24px;
+    line-height: 20px;
     font-family: "GothamProMedium";
     text-align: left;
     color: white;

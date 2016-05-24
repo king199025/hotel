@@ -216,6 +216,8 @@ a.desc:after {
     font-weight: 700;
     line-height: 18px;
     padding-top: 0px!important;
+    height: 11%;
+    overflow: hidden;
 }
 .content__press--right__title{
     text-align: center!important;

@@ -12,6 +12,9 @@
                             <button id="send_letter" class="footer__send--btn">отправить</button>
                         </div>
 
+                        <p class="footer__send--subtitle">Наш менеджер с Вами свяжется в течении 20 минут</p>
+
+
                     </div>
 
 
