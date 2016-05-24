@@ -534,7 +534,7 @@ html, body {
 
 .content__photo--tower__name {
     display: block;
-    position: relative;
+    position: absolute;
     width: 509px;
     height: 127px;
     text-align: center;
@@ -547,7 +547,7 @@ html, body {
 }
 
 .content__photo--tower__name h3 {
-    font-size: 55px;
+    font-size: 46px;
     font-family: "GothamProBold";
     text-align: left;
     color: white;

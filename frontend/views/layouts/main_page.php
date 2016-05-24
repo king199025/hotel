@@ -42,7 +42,7 @@ AppAsset::register($this);
 
                         <div class="content__photo--text">
                             <h3>MERCURY city</h3>
-                            <a href="<?= Url::to(['/ms']) ?>"><button class="footer__send--btn">ПОСМОТРЕТЬ</button></a>
+                            <a href="<?= Url::to(['/site/mercury_city_tower']);?>"><button class="footer__send--btn">ПОСМОТРЕТЬ</button></a>
                         </div>
 
                     </div>
@@ -51,7 +51,7 @@ AppAsset::register($this);
 
                         <div class="content__photo--text">
                             <h3>MERCURY SPACE</h3>
-                            <a href="mercury-space.html"><button class="footer__send--btn">ПОСМОТРЕТЬ</button></a>
+                            <a href="<?= Url::to(['/site/mc']);?>"><button class="footer__send--btn">ПОСМОТРЕТЬ</button></a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@ AppAsset::register($this);
 
                         <div class="content__photo--text">
                             <h3>АПАРТАМЕНТЫ</h3>
-                            <a href="apartments.html"><button class="footer__send--btn">ПОСМОТРЕТЬ</button></a>
+                            <a href="<?= Url::to(['/site/apartments']);?>"><button class="footer__send--btn">ПОСМОТРЕТЬ</button></a>
                         </div>
                     </div>
                     <div class="content__photo">
@@ -72,7 +72,7 @@ AppAsset::register($this);
 
                         <div class="content__photo--text">
                             <h3>ОФИСЫ</h3>
-                            <a href="offices.html"><button class="footer__send--btn">ПОСМОТРЕТЬ</button></a>
+                            <a href="<?= Url::to(['/site/offices']);?>"><button class="footer__send--btn">ПОСМОТРЕТЬ</button></a>
                         </div>
                     </div>
                 </div>
